@@ -1,0 +1,133 @@
+'use client'
+
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import Link from 'next/link'
+import Image from 'next/image'
+
+export default function AkutTandvardMalmoPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      
+      {/* Hero Section */}
+      <div className="relative bg-gray-900 py-24 sm:py-32">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/Miljöfoton på kliniken (3).jpg"
+            alt="Akut Tandvård Malmö"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gray-900/70"></div>
+        </div>
+        
+        <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Akut Tandvård Malmö
+          </h1>
+          <p className="mt-6 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
+            När tandvärk eller tandskada drabbar akut behöver du snabb hjälp. Art of Dent erbjuder akut tandvård i Malmö.
+          </p>
+        </div>
+      </div>
+
+      {/* Breadcrumb */}
+      <div className="bg-gray-50 py-4">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <nav className="flex items-center space-x-2 text-sm text-gray-500">
+            <Link href="/" className="hover:text-gray-700">Hem</Link>
+            <span>/</span>
+            <Link href="/kunskapbanken" className="hover:text-gray-700">Fakta</Link>
+            <span>/</span>
+            <span className="text-gray-900">Akut Tandvård</span>
+          </nav>
+        </div>
+      </div>
+
+      {/* Article Content */}
+      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
+        <div className="prose prose-lg max-w-none">
+          <p className="text-xl text-gray-700 leading-8 mb-8">
+            När olyckan är framme och du drabbas av akuta tandproblem är det viktigt att du kan få rätt hjälp snabbt. Oavsett om du har problem med tandvärk, ilningar eller har skadat en tand eller fyllning ska du inte behöva vänta på hjälp och gå omkring och ha ont.
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Vanliga tandnödsfall</h2>
+          <ul className="list-disc pl-6 text-gray-700 leading-7 mb-6 space-y-2">
+            <li>Svår tandvärk som inte går över med receptfria smärtstillande</li>
+            <li>Avbruten tand efter olycka eller trauma</li>
+            <li>Lös tand som blivit lös efter slag eller fall</li>
+            <li>Tandköttsinflammation med svullnad och smärta</li>
+            <li>Skadade fyllningar eller kronor</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Första hjälpen vid tandnödsfall</h2>
+          <p className="text-gray-700 leading-7 mb-6">
+            Vid tandvärk: Skölj munnen med ljummet saltvatten, ta receptfria smärtstillande, applicera kald kompress utvändigt och undvik heta/kalla drycker. Vid avbruten tand: Spara alla tanddelar, skölj munnen försiktigt, applicera kompress mot blödning och sök vård omedelbart.
+          </p>
+
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+            <h3 className="text-lg font-medium text-blue-800 mb-2">Kontakta oss för akut tandvård</h3>
+            <ul className="text-blue-700 list-disc pl-5 space-y-1">
+              <li>Ring oss på 040-121 108 för akut tandvård</li>
+              <li>Vi tar emot akuta patienter vardagar</li>
+              <li>Snabb behandling och smärtlindring</li>
+              <li>Erfarna tandläkare som hanterar akuta situationer</li>
+              <li>Modern utrustning för professionell vård</li>
+            </ul>
+          </div>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Varför välja Art of Dent för akut tandvård?</h2>
+          <p className="text-gray-700 leading-7 mb-6">
+            Vi på Art of Dent strävar efter att kunna hjälpa dig som söker akut tandvård så snabbt som möjligt och kan nästan alltid ge dig en tid inom ett par timmar. Vi har dagligen flera tider avsatta för akut tandvård och tar samma pris för tandvård under alla våra öppettider.
+          </p>
+        </div>
+
+        {/* CTA Section */}
+        <div className="bg-primary-50 rounded-2xl p-8 mt-16 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Behöver du akut tandvård?</h2>
+          <p className="text-gray-600 mb-6">
+            Har du akut ont? Ring oss på Art of Dent för snabb hjälp. Ring <strong>040-121 108</strong> eller boka tid online.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Link
+              href="/boka-tid"
+              className="rounded-full bg-accent-400 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 transition-all"
+            >
+              BOKA TID ONLINE
+            </Link>
+            <Link
+              href="/kontakt"
+              className="rounded-full border-2 border-primary-700 bg-white px-8 py-3 text-base font-semibold text-primary-700 hover:bg-primary-50 transition-all"
+            >
+              RING OSS
+            </Link>
+          </div>
+        </div>
+
+        {/* Related Articles */}
+        <div className="mt-16">
+          <div className="bg-yellow-50 rounded-2xl p-8">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+              Relaterade ämnen
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/kunskapbanken/tandvark" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+                Tandvärk
+              </Link>
+              <Link href="/behandlingar/akut-tandvard" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+                Akut tandvård
+              </Link>
+              <Link href="/kunskapbanken/skadad-tand" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+                Skadad tand
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <Footer />
+    </div>
+  )
+}
