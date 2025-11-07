@@ -15,18 +15,18 @@ export default function MyterOmTandvardPage() {
           <div className="absolute inset-0 bg-gray-900/70"></div>
         </div>
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Myter om tandvård</h1>
-          <p className="mt-6 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">Sanningen bakom vanliga missuppfattningar om tänder och tandvård.</p>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Myter om tandpleje</h1>
+          <p className="mt-6 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">Sandheden bag almindelige misforståelser om tænder og tandpleje.</p>
         </div>
       </div>
       <div className="bg-gray-50 py-4">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <nav className="flex items-center space-x-2 text-sm text-gray-500">
-            <Link href="/" className="hover:text-gray-700">Hem</Link>
+            <Link href="/" className="hover:text-gray-700">Hjem</Link>
             <span>/</span>
-            <Link href="/kunskapbanken" className="hover:text-gray-700">Fakta</Link>
+            <Link href="/kunskapbanken" className="hover:text-gray-700">Vidensbank</Link>
             <span>/</span>
-            <span className="text-gray-900">Myter om tandvård</span>
+            <span className="text-gray-900">Myter om tandpleje</span>
           </nav>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function MyterOmTandvardPage() {
           <div className="bg-yellow-50 rounded-2xl p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Relaterade ämnen</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/kunskapbanken/vanliga-fragor-om-tander" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Vanliga frågor</Link>
+              <Link href="/kunskapbanken/vanliga-fragor-om-tander" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Ofte stillede spørgsmål</Link>
               <Link href="/kunskapbanken/munhygien-malmo-expertrad-hemma" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Munhygien</Link>
               <Link href="/kunskapbanken/karies" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Karies</Link>
             </div>

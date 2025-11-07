@@ -33,11 +33,11 @@ export default function AboutVideo() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Tandvård för hela livet
+            Tandpleje for hele livet
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Från den första mjölktanden till avancerade specialistbehandlingar - vi erbjuder komplett tandvård för alla åldrar. 
-            Med våra specialister inom käkkirurgi och parodontologi säkerställer vi optimal munhälsa genom hela livet.
+            Fra den første mælketand til avancerede specialistbehandlinger - vi tilbyder komplet tandpleje for alle aldre. 
+            Med vores specialister inden for kæbekirurgi og parodontologi sikrer vi optimal mundssundhed gennem hele livet.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function AboutVideo() {
             <button
               onClick={toggleMute}
               className="absolute bottom-4 right-4 rounded-full bg-black/30 p-3 text-white backdrop-blur-sm transition-opacity hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black/30"
-              aria-label={isMuted ? 'Slå på ljud' : 'Stäng av ljud'}
+              aria-label={isMuted ? 'Tænd for lyd' : 'Sluk for lyd'}
             >
               {isMuted ? (
                 <SpeakerXMarkIcon className="h-6 w-6" />
@@ -84,7 +84,7 @@ export default function AboutVideo() {
           {/* Video description */}
           <div className="mt-8 text-center">
             <p className="text-sm text-gray-500">
-              Lär dig mer om våra tjänster och hur vi kan hjälpa dig att upprätthålla optimal munhälsa
+              Lær mere om vores tjenester, og hvordan vi kan hjælpe dig med at opretholde optimal mundssundhed
             </p>
           </div>
         </div>
@@ -95,15 +95,15 @@ export default function AboutVideo() {
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-accent-100">
               <Image
                 src="/images/icons/happy-tooth.png"
-                alt="Barn- och Ungdomstandvård"
+                alt="Børn- og ungdomstandpleje"
                 width={29}
                 height={29}
                 className="w-7 h-7"
               />
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-gray-900">Barn- och Ungdomstandvård</h3>
+            <h3 className="mt-4 text-lg font-semibold text-gray-900">Børn- og ungdomstandpleje</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Från första mjölktanden - vi skapar positiva tandvårdsupplevelser för de yngsta
+              Fra den første mælketand - vi skaber positive tandplejeoplevelser for de yngste
             </p>
           </div>
 
@@ -111,15 +111,15 @@ export default function AboutVideo() {
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-accent-100">
               <Image
                 src="/images/icons/kak_kirurgi.png"
-                alt="Käkkirurgi"
+                alt="Kæbekirurgi"
                 width={29}
                 height={29}
                 className="w-7 h-7"
               />
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-gray-900">Käkkirurgi</h3>
+            <h3 className="mt-4 text-lg font-semibold text-gray-900">Kæbekirurgi</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Avancerade kirurgiska ingrepp med våra specialister inom oral- och käkkirurgi
+              Avancerede kirurgiske indgreb med vores specialister inden for oral- og kæbekirurgi
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function AboutVideo() {
             </div>
             <h3 className="mt-4 text-lg font-semibold text-gray-900">Parodontologi</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Specialistvård för tandkött och stödjevävnader - för friska tänder hela livet
+              Specialistpleje for tandkød og støttevæv - for sunde tænder hele livet
             </p>
           </div>
         </div>

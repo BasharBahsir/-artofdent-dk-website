@@ -45,33 +45,44 @@ export default function Hero({ selectedClinic, onClinicChange }: HeroProps) {
                   <StarIcon key={i} className="h-5 w-5 text-accent-400" />
                 ))}
               </div>
-              <span className="text-sm text-gray-600">4.9 av 5.0 | betyg:</span>
+              <span className="text-sm text-gray-600">4.9 af 5.0 | bedømmelser:</span>
             </div>
             <p className="text-sm text-gray-600 italic">
-              &ldquo;Professionell tandvård med ett varmt bemötande. Känner mig trygg här.&rdquo;
+              &ldquo;Professionel tandpleje med en varm tilgang. Føler mig tryg her.&rdquo;
             </p>
           </div>
           
           <div className="mb-6 text-sm text-gray-600">
-            Allmäntandvård | Specialisttandvård | Tandläkare
+            Almindelig tandpleje | Specialisttandpleje | Tandlæge
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Din tandläkare i hjärtat av Malmö
+            Din tandlæge i hjertet af Malmö
           </h1>
+          
+          {/* Øresund Bridge Cost Coverage Banner */}
+          <div className="mt-6 mb-6 p-4 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg">
+            <div className="flex items-center gap-x-2 mb-2">
+              <div className="h-3 w-3 bg-green-500 rounded-full animate-pulse" />
+              <span className="text-sm font-semibold text-green-800">SÆRLIGT TILBUD TIL DANSKE PATIENTER</span>
+            </div>
+            <p className="text-sm text-green-700">
+              <strong>Vi betaler din rejse over Øresund!</strong> Tog, bus eller bilafgift - vi dækker omkostningerne når du vælger os.
+            </p>
+          </div>
           
           <div className="mt-6 space-y-2 text-lg leading-8 text-gray-600">
             <div className="flex items-center gap-x-3">
               <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-              <span>Transparenta och konkurrenskraftiga priser</span>
+              <span>Betydelige besparelser sammenlignet med København</span>
             </div>
             <div className="flex items-center gap-x-3">
               <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-              <span>Generösa garantier på alla behandlingar</span>
+              <span>Generøse garantier på alle behandlinger</span>
             </div>
             <div className="flex items-center gap-x-3">
               <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-              <span>Flexibla betalningslösningar</span>
+              <span>Fleksible betalingsløsninger</span>
             </div>
           </div>
 
@@ -82,7 +93,7 @@ export default function Hero({ selectedClinic, onClinicChange }: HeroProps) {
               className="mt-8 flex items-center gap-x-2 rounded-full border border-primary-200 bg-white px-4 py-2 text-sm text-gray-600 shadow-sm hover:bg-gray-50 transition-colors cursor-pointer"
             >
               <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-              {selectedClinic ? `Malmö - ${selectedClinic}` : 'Välj klinik'}
+              {selectedClinic ? `Malmö - ${selectedClinic}` : 'Vælg klinik'}
             </button>
           </div>
 
@@ -92,13 +103,13 @@ export default function Hero({ selectedClinic, onClinicChange }: HeroProps) {
               href="/boka-tid"
               className="rounded-full bg-primary-700 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-primary-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700 transition-all hover:shadow-xl"
             >
-              BOKA ONLINE
+              BOOK ONLINE
             </Link>
             <Link
               href="/kontakt"
               className="rounded-full border-2 border-secondary-400 bg-white px-8 py-3 text-base font-semibold text-secondary-400 shadow-lg hover:bg-secondary-400 hover:text-white hover:border-secondary-500 transition-all hover:shadow-xl"
             >
-              KONTAKTA OSS
+              KONTAKT OS
             </Link>
           </div>
         </div>

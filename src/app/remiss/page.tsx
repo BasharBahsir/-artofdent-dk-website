@@ -30,10 +30,33 @@ const benefits = [
 
 export default function RemissPage() {
   useEffect(() => {
+    // Check if script already exists
+    const existingScript = document.querySelector('script[src="https://muntra-dev.github.io/referral-page/index.js"]')
+    if (existingScript) {
+      return
+    }
+
     // Load the Muntra widget script
     const script = document.createElement('script')
     script.type = 'text/javascript'
     script.src = 'https://muntra-dev.github.io/referral-page/index.js'
+    script.async = false // Load synchronously to ensure proper initialization
+    
+    // Set the correct attribute after script loads
+    script.onload = () => {
+      setTimeout(() => {
+        const widget = document.querySelector('.muntra-referral-widget')
+        if (widget) {
+          widget.setAttribute('muntra_clinic_id', '1750')
+          widget.removeAttribute('data-muntra-clinic-id')
+          console.log('Muntra widget initialized with clinic ID 1750')
+        }
+      }, 100)
+    }
+    
+    script.onerror = () => {
+      console.error('Failed to load Muntra widget script')
+    }
     
     // Add script to the end of body
     document.body.appendChild(script)
@@ -41,9 +64,9 @@ export default function RemissPage() {
     // Cleanup function
     return () => {
       // Remove script when component unmounts
-      const existingScript = document.querySelector('script[src="https://muntra-dev.github.io/referral-page/index.js"]')
-      if (existingScript) {
-        document.body.removeChild(existingScript)
+      const scriptToRemove = document.querySelector('script[src="https://muntra-dev.github.io/referral-page/index.js"]')
+      if (scriptToRemove) {
+        document.body.removeChild(scriptToRemove)
       }
     }
   }, [])
@@ -57,11 +80,11 @@ export default function RemissPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-dental-900 sm:text-6xl">
-              Remiss till Art of Dent
+              Henvisning til Art of Dent
             </h1>
             <p className="mt-6 text-lg leading-8 text-dental-600">
-              Skicka remisser digitalt till våra specialister inom parodontologi och käkkirurgi. 
-              Vi tar emot komplexa fall och erbjuder högkvalitativ specialistbehandling i Malmö.
+              Send henvisninger digitalt til vores specialister inden for parodontologi og kæbekirurgi. 
+              Vi modtager komplekse tilfælde og tilbyder højkvalitets specialistbehandling i Malmö. Som dansk patient dækker vi dine rejseomkostninger over Øresund.
             </p>
           </div>
         </div>
@@ -72,10 +95,10 @@ export default function RemissPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-dental-900 sm:text-4xl">
-              Fördelar med vårt remissystem
+              Fordele ved vores henvisningssystem
             </h2>
             <p className="mt-6 text-lg leading-8 text-dental-600">
-              Vi gör det enkelt för er att skicka remisser och för era patienter att få specialistbehandling
+              Vi gør det nemt for jer at sende henvisninger og for jeres patienter at få specialistbehandling. Danske patienter får dækket rejseomkostninger.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -103,7 +126,7 @@ export default function RemissPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-dental-900 sm:text-4xl">
-              Våra Specialister
+              Vores Specialister
             </h2>
             <p className="mt-6 text-lg leading-8 text-dental-600">
               Erfarna specialister som tar emot remisser inom sina expertområden
@@ -120,7 +143,6 @@ export default function RemissPage() {
               </p>
               <div className="text-sm text-dental-500">
                 <p><strong>Specialist:</strong> Aleksander Milosavljevic</p>
-                <p><strong>ST-läkare:</strong> Palwasha Momand</p>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -162,7 +184,7 @@ export default function RemissPage() {
           <div className="mx-auto max-w-4xl">
             <div 
               className="muntra-referral-widget"
-              muntra_clinic_id="1750"
+              data-muntra-clinic-id="1750"
               style={{ 
                 minHeight: '1000px',
                 width: '100%',

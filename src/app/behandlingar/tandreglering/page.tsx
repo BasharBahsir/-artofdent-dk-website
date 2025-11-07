@@ -9,20 +9,20 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Hur lång tid tar en tandreglering?",
-    answer: "Behandlingstiden varierar mellan 6 månader och 2-3 år beroende på hur omfattande korrigeringen är. Vi gör en noggrann bedömning och ger dig en tidsplan vid första konsultationen."
+    question: "Hvor lang tid tager en tandregulering?",
+    answer: "Behandlingstiden varierer mellem 6 måneder og 2-3 år afhængigt af, hvor omfattende korrektionen er. Vi laver en grundig vurdering og giver dig en tidsplan ved første konsultation. Som dansk patient sparer du betydeligt sammenlignet med København!"
   },
   {
-    question: "Kan vuxna ha tandställning?",
-    answer: "Absolut! Allt fler vuxna väljer tandreglering. Med moderna alternativ som Invisalign kan behandlingen vara diskret och bekväm för vuxna i alla åldrar."
+    question: "Kan voksne have tandregulering?",
+    answer: "Absolut! Flere og flere voksne vælger tandregulering. Med moderne alternativer som Invisalign kan behandlingen være diskret og behagelig for voksne i alle aldre."
   },
   {
-    question: "Gör tandställning ont?",
-    answer: "Det är normalt att känna ett visst tryck och obehag de första dagarna efter justering, men det ska inte göra ont. Eventuella besvär försvinner snabbt och kan lindras med receptfria smärtstillande."
+    question: "Gør tandregulering ondt?",
+    answer: "Det er normalt at føle et vist tryk og ubehag de første dage efter justering, men det skal ikke gøre ondt. Eventuelle gener forsvinder hurtigt og kan lindres med håndkøbsmedicin."
   },
   {
-    question: "Vad kostar tandreglering?",
-    answer: "Kostnaden varierar beroende på typ av behandling och omfattning. Vi ger alltid en kostnadskalkyl innan behandling påbörjas. Kontakta oss för en kostnadsfri konsultation."
+    question: "Hvad koster tandregulering?",
+    answer: "Omkostningerne varierer afhængigt af behandlingstype og omfang. Vi giver altid et omkostningsoverslag, før behandlingen påbegyndes. Kontakt os for en gratis konsultation. Danske patienter sparer op til 50% sammenlignet med København!"
   }
 ]
 
@@ -44,24 +44,24 @@ export default function TandregleringPage() {
             {/* Left side - Content */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                Tandreglering
+                Tandregulering
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Få ett rakt och vackert leende med modern tandreglering. Vi erbjuder både traditionella tandställningar och diskreta alternativ som Invisalign för barn och vuxna.
+                Få et lige og smukt smil med moderne tandregulering. Vi tilbyder både traditionelle tandreguleringer og diskrete alternativer som Invisalign for børn og voksne. Som dansk patient sparer du op til 50% sammenlignet med København, og vi dækker din rejse over Øresund!
               </p>
               
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Invisalign - diskret och avtagbar</span>
+                  <span className="text-neutral-600">Invisalign - diskret og aftagelig</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Traditionell tandställning</span>
+                  <span className="text-neutral-600">Traditionel tandregulering</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">För barn och vuxna</span>
+                  <span className="text-neutral-600">For børn og voksne</span>
                 </div>
               </div>
 
@@ -103,7 +103,7 @@ export default function TandregleringPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

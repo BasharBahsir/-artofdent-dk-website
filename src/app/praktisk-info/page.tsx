@@ -200,7 +200,7 @@ export default function PraktiskInfoPage() {
               <QuestionMarkCircleIcon className="h-8 w-8 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-dental-900 sm:text-4xl">
-              Vanliga frågor
+              Ofte stillede spørgsmål
             </h2>
           </div>
 

@@ -96,7 +96,7 @@ export default function Chatbot() {
       console.error('Failed to fetch chat response:', error);
       const errorMessage: Message = { 
         role: 'model', 
-        text: 'Ursäkta, något gick fel med AI-assistenten. Kontakta oss gärna direkt på telefon eller via kontaktformuläret för hjälp.' 
+        text: 'Undskyld, noget gik galt med AI-assistenten. Kontakt os gerne direkte på telefon eller via kontaktformularen for hjælp.' 
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
@@ -111,7 +111,7 @@ export default function Chatbot() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="bg-primary-700 text-white p-4 rounded-full shadow-lg hover:bg-primary-800 transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-700"
-          aria-label="Öppna chatt"
+          aria-label="Åbn chat"
         >
           {isOpen ? (
             <XMarkIcon className="h-8 w-8" />
@@ -131,7 +131,7 @@ export default function Chatbot() {
             </div>
             <div>
               <h3 className="font-bold text-gray-900">AI-assistent på Artofdent</h3>
-              <p className="text-xs text-gray-500">Svarar vanligtvis direkt</p>
+              <p className="text-xs text-gray-500">Svarer normalt med det samme</p>
             </div>
           </div>
 
@@ -140,23 +140,23 @@ export default function Chatbot() {
             <div className="space-y-4">
               <div className="flex justify-start">
                 <div className="bg-gray-100 p-3 rounded-lg max-w-xs">
-                  <p className="text-sm text-gray-800">Hej och välkommen till Artofdent! Jag är din digitala assistent. Vad kan jag hjälpa dig med idag?</p>
+                  <p className="text-sm text-gray-800">Hej og velkommen til Artofdent! Jeg er din digitale assistent. Hvad kan jeg hjælpe dig med i dag?</p>
                 </div>
               </div>
               {/* Quick prompt buttons - only show when no messages yet */}
               {messages.length === 0 && (
                 <div className="space-y-2 mb-4">
                   <button
-                    onClick={() => handleQuickPrompt('Jag vill boka tid för tandundersökning')}
+                    onClick={() => handleQuickPrompt('Jeg vil gerne booke tid til tandundersøgelse')}
                     className="w-full text-left bg-white border border-gray-200 hover:border-primary-700 hover:bg-primary-50 p-3 rounded-lg transition-all text-sm text-gray-700 hover:text-primary-700"
                   >
-                    Boka tid för tandundersökning
+                    Book tid til tandundersøgelse
                   </button>
                   <button
-                    onClick={() => handleQuickPrompt('Jag har akut tandvärk, hur snabbt kan ni ta emot mig?')}
+                    onClick={() => handleQuickPrompt('Jeg har akut tandpine, hvor hurtigt kan I tage imod mig?')}
                     className="w-full text-left bg-white border border-gray-200 hover:border-primary-700 hover:bg-primary-50 p-3 rounded-lg transition-all text-sm text-gray-700 hover:text-primary-700"
                   >
-                    Akut tandvärk - behöver hjälp snabbt
+                    Akut tandpine - har brug for hjælp hurtigt
                   </button>
                 </div>
               )}
@@ -182,7 +182,7 @@ export default function Chatbot() {
           {/* Disclaimer */}
           <div className="px-4 py-2 bg-gray-50 border-t">
             <p className="text-xs text-gray-400 text-center">
-              Denna chatt ger allmän information och är inte en professionell medicinsk bedömning.
+              Denne chat giver generel information og er ikke en professionel medicinsk vurdering.
             </p>
           </div>
 
@@ -193,14 +193,14 @@ export default function Chatbot() {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Fråga mig något..."
+                placeholder="Spørg mig om noget..."
                 className="flex-1 w-full px-4 py-2 text-sm text-gray-900 bg-gray-100 border-transparent rounded-full focus:outline-none focus:ring-2 focus:ring-primary-700"
               />
               <button
                 type="submit"
                 className="p-3 bg-primary-700 text-white rounded-full hover:bg-primary-800 disabled:bg-gray-300 transition-colors"
                 disabled={isLoading}
-                aria-label="Skicka meddelande"
+                aria-label="Send besked"
               >
                 <PaperAirplaneIcon className="h-5 w-5" />
               </button>

@@ -8,46 +8,46 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "När träder reformen i kraft?",
-    answer: "Från och med 1 januari 2026."
+    question: "Hvornår træder reformen i kraft?",
+    answer: "Fra og med 1. januar 2026."
   },
   {
-    question: "Vem gäller den för?",
-    answer: "Alla som är 67 år eller äldre och är inskrivna i det svenska försäkringssystemet."
+    question: "Hvem gælder den for?",
+    answer: "Alle, der er 67 år eller ældre og er indskrevet i det svenske forsikringssystem. Som dansk patient kan du også drage fordel af dette system, når du vælger tandpleje i Malmö."
   },
   {
-    question: "Hur mycket betalar jag?",
-    answer: "Du betalar 10 % av referenspriset för de behandlingar som omfattas. Staten står för resterande kostnad. Ersättningen registreras automatiskt via Försäkringskassan när du besöker en tandläkare som är ansluten."
+    question: "Hvor meget betaler jeg?",
+    answer: "Du betaler 10% af referenceprisen for de behandlinger, der er omfattet. Staten står for de resterende omkostninger. Erstatningen registreres automatisk via Försäkringskassan, når du besøger en tandlæge, der er tilknyttet."
   },
   {
-    question: "Hur vet jag om en behandling omfattas?",
-    answer: "Din tandläkare hjälper dig att se vad som ingår i Tiotandvården och vad som fortfarande täcks av nuvarande högkostnadsskydd."
+    question: "Hvordan ved jeg, om en behandling er omfattet?",
+    answer: "Din tandlæge hjælper dig med at se, hvad der indgår i senior tandplejen, og hvad der stadig dækkes af nuværende højkostnadsbeskyttelse."
   }
 ]
 
 const includedTreatments = [
-  "Lagningar",
-  "Rotfyllningar", 
-  "Tandutdragningar",
-  "Avtagbar protetik (proteser)",
-  "Tand- och implantatstödda kronor och broar på tänder 1–5",
-  "Akut behandling (själva behandlingen)"
+  "Fyldninger",
+  "Rodfyldninger", 
+  "Tandudtrækninger",
+  "Aftagelig protetik (proteser)",
+  "Tand- og implantatstøttede kroner og broer på tænder 1-5",
+  "Akut behandling (selve behandlingen)"
 ]
 
 const excludedTreatments = [
-  "Undersökningar och kontroller",
-  "Röntgen", 
-  "Förebyggande behandlingar (tandhygienist)",
-  "Estetisk tandvård (tandblekning m.m.)",
-  "Kronor/broar på tänder bakom position 5",
-  "Akutundersökning/röntgen"
+  "Undersøgelser og kontroller",
+  "Røntgen", 
+  "Forebyggende behandlinger (tandhygiejnist)",
+  "Æstetisk tandpleje (tandblekning m.m.)",
+  "Kroner/broer på tænder bag position 5",
+  "Akutundersøgelse/røntgen"
 ]
 
 const treatmentPrices = [
-  { name: "Lagning (1 yta)", normalPrice: 1200, tiotandPrice: 120 },
-  { name: "Lagning (2 ytor)", normalPrice: 1800, tiotandPrice: 180 },
-  { name: "Rotfyllning", normalPrice: 4500, tiotandPrice: 450 },
-  { name: "Tandutdragning", normalPrice: 2200, tiotandPrice: 220 },
+  { name: "Fyldning (1 flade)", normalPrice: 1200, tiotandPrice: 120 },
+  { name: "Fyldning (2 flader)", normalPrice: 1800, tiotandPrice: 180 },
+  { name: "Rodfyldning", normalPrice: 4500, tiotandPrice: 450 },
+  { name: "Tandudtrækning", normalPrice: 2200, tiotandPrice: 220 },
   { name: "Krona (framtand)", normalPrice: 8500, tiotandPrice: 850 },
   { name: "Bro (3 enheter)", normalPrice: 18000, tiotandPrice: 1800 },
   { name: "Delprotes", normalPrice: 12000, tiotandPrice: 1200 },
@@ -370,10 +370,10 @@ export default function TiotandvardPage() {
       <div className="py-16 bg-primary-600">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Vi ser fram emot att ta hand om ditt leende
+            Vi ser frem til at tage os af dit smil
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Utan att det behöver kosta för mycket. Välkommen till en behagligare tandvårdsupplevelse!
+            Uden at det behøver at koste for meget. Velkommen til en mere behagelig tandplejeoplevelse!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -399,7 +399,7 @@ export default function TiotandvardPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor om Tiotandvård
+                Ofte stillede spørgsmål om senior tandpleje
               </h2>
             </div>
 

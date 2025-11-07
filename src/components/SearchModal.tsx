@@ -17,114 +17,114 @@ interface SearchResult {
 const searchData: SearchResult[] = [
   // Treatments
   {
-    title: 'Akut tandvård',
-    description: 'Vid tandvärk och olyckor',
+    title: 'Akut tandpleje',
+    description: 'Ved tandpine og ulykker',
     href: '/behandlingar/akut-tandvard',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Tandimplantat',
-    description: 'Ersättning av förlorade tänder',
+    title: 'Tandimplantater',
+    description: 'Erstatning af mistede tænder',
     href: '/behandlingar/tandimplantat',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Estetisk tandvård',
-    description: 'För vackrare tänder',
+    title: 'Æstetisk tandpleje',
+    description: 'For smukkere tænder',
     href: '/behandlingar/estetisk-tandvard',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Tandreglering',
-    description: 'För sneda eller trångställda tänder',
+    title: 'Tandregulering',
+    description: 'For skæve eller tætpakkede tænder',
     href: '/behandlingar/tandreglering',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Barn tandvård',
-    description: 'Specialiserad tandvård för barn',
+    title: 'Børnetandpleje',
+    description: 'Specialiseret tandpleje for børn',
     href: '/behandlingar/barnvard',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
     title: 'Tandblekning',
-    description: 'Vitare tänder med professionell blekning',
+    description: 'Hvidere tænder med professionel blekning',
     href: '/behandlingar/tandblekning',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Tandhygienist',
-    description: 'Professionell tandrengöring och förebyggande vård',
+    title: 'Tandhygiejnist',
+    description: 'Professionel tandrensning og forebyggende pleje',
     href: '/behandlingar/tandhygienist',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Rotfyllning',
-    description: 'Behandling av infekterade tandrötter',
+    title: 'Rodfyldning',
+    description: 'Behandling af inficerede tandrødder',
     href: '/behandlingar/rotfyllning',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Tandundersökning',
-    description: 'Regelbunden kontroll för god munhälsa',
+    title: 'Tandundersøgelse',
+    description: 'Regelmæssig kontrol for god mundssundhed',
     href: '/behandlingar/tandundersokning',
     type: 'treatment',
-    category: 'Behandlingar'
+    category: 'Behandlinger'
   },
   {
-    title: 'Tandvårdsbidrag',
-    description: 'Kalkylator för tandvårdsbidrag',
+    title: 'Tandplejetilskud',
+    description: 'Beregner for tandplejetilskud',
     href: '/behandlingar/tandvard-bidrag',
     type: 'treatment',
-    category: 'Tandvårdsstöd'
+    category: 'Tandplejeydelser'
   },
   {
-    title: 'Tiotandvård',
-    description: 'Prisvärd tandvård för 67+ år',
+    title: 'Senior tandpleje',
+    description: 'Prisvenlig tandpleje for 67+ år',
     href: '/behandlingar/tiotandvard',
     type: 'treatment',
-    category: 'Tandvårdsstöd'
+    category: 'Tandplejeydelser'
   },
   // Pages
   {
-    title: 'Om oss',
-    description: 'Lär känna vårt team och vår historia',
+    title: 'Om os',
+    description: 'Lær vores team og vores historie at kende',
     href: '/om-oss',
     type: 'page',
     category: 'Information'
   },
   {
     title: 'Kontakt',
-    description: 'Kontaktinformation och öppettider',
+    description: 'Kontaktinformation og åbningstider',
     href: '/kontakt',
     type: 'page',
     category: 'Information'
   },
   {
-    title: 'Boka tid',
-    description: 'Boka din tandläkarbesök online',
+    title: 'Book tid',
+    description: 'Book dit tandlægebesøg online',
     href: '/boka-tid',
     type: 'page',
-    category: 'Bokning'
+    category: 'Booking'
   },
   {
-    title: 'Remiss',
-    description: 'Skicka remiss till våra specialister',
+    title: 'Henvisning',
+    description: 'Send henvisning til vores specialister',
     href: '/remiss',
     type: 'page',
     category: 'Specialister'
   },
   {
-    title: 'Kunskapbanken',
-    description: 'Artiklar och information om tandvård',
+    title: 'Vidensbank',
+    description: 'Artikler og information om tandpleje',
     href: '/kunskapbanken',
     type: 'page',
     category: 'Information'
@@ -184,13 +184,13 @@ export default function SearchModal({ isOpen, onClose, initialQuery = '' }: Sear
   const getTypeLabel = (type: string) => {
     switch (type) {
       case 'treatment':
-        return 'Behandlingar'
+        return 'Behandlinger'
       case 'article':
-        return 'Artiklar'
+        return 'Artikler'
       case 'page':
-        return 'Sidor'
+        return 'Sider'
       default:
-        return 'Resultat'
+        return 'Resultater'
     }
   }
 
@@ -236,7 +236,7 @@ export default function SearchModal({ isOpen, onClose, initialQuery = '' }: Sear
                 <input
                   type="text"
                   className="h-20 w-full border-0 bg-transparent pl-16 pr-16 text-gray-900 placeholder:text-gray-400 focus:ring-0 text-xl"
-                  placeholder="Sök behandlingar, artiklar eller information..."
+                  placeholder="Søg behandlinger, artikler eller information..."
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   autoFocus
@@ -303,9 +303,9 @@ export default function SearchModal({ isOpen, onClose, initialQuery = '' }: Sear
                 <div className="flex-1 flex items-center justify-center px-8 py-24 text-center">
                   <div>
                     <MagnifyingGlassIcon className="mx-auto h-12 w-12 text-gray-400" />
-                    <p className="mt-6 font-semibold text-gray-900 text-xl">Inga resultat hittades</p>
+                    <p className="mt-6 font-semibold text-gray-900 text-xl">Ingen resultater fundet</p>
                     <p className="mt-3 text-gray-500 text-base">
-                      Försök med andra sökord eller bläddra genom våra behandlingar.
+                      Prøv andre søgeord eller gennemse vores behandlinger.
                     </p>
                   </div>
                 </div>
@@ -316,9 +316,9 @@ export default function SearchModal({ isOpen, onClose, initialQuery = '' }: Sear
                 <div className="flex-1 flex items-center justify-center px-8 py-24 text-center">
                   <div>
                     <MagnifyingGlassIcon className="mx-auto h-12 w-12 text-gray-400" />
-                    <p className="mt-6 font-semibold text-gray-900 text-xl">Sök på vår webbplats</p>
+                    <p className="mt-6 font-semibold text-gray-900 text-xl">Søg på vores hjemmeside</p>
                     <p className="mt-3 text-gray-500 text-base">
-                      Hitta behandlingar, artiklar och information snabbt och enkelt.
+                      Find behandlinger, artikler og information hurtigt og nemt.
                     </p>
                     <div className="mt-8 flex flex-wrap justify-center gap-3">
                       <Link
@@ -326,21 +326,21 @@ export default function SearchModal({ isOpen, onClose, initialQuery = '' }: Sear
                         onClick={handleClose}
                         className="rounded-full bg-primary-100 px-6 py-3 text-base font-medium text-primary-800 hover:bg-primary-200 transition-colors"
                       >
-                        Behandlingar
+                        Behandlinger
                       </Link>
                       <Link
                         href="/kunskapbanken"
                         onClick={handleClose}
                         className="rounded-full bg-primary-100 px-6 py-3 text-base font-medium text-primary-800 hover:bg-primary-200 transition-colors"
                       >
-                        Kunskapbanken
+                        Vidensbank
                       </Link>
                       <Link
                         href="/boka-tid"
                         onClick={handleClose}
                         className="rounded-full bg-accent-100 px-6 py-3 text-base font-medium text-accent-800 hover:bg-accent-200 transition-colors"
                       >
-                        Boka tid
+                        Book tid
                       </Link>
                     </div>
                   </div>

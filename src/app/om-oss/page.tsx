@@ -6,23 +6,23 @@ import { HeartIcon, ShieldCheckIcon, SparklesIcon, UserGroupIcon } from '@heroic
 
 const values = [
   {
-    name: 'Professionalism',
-    description: 'Vi arbetar alltid med högsta kvalitet och använder modern teknik för bästa resultat.',
+    name: 'Professionalisme',
+    description: 'Vi arbejder altid med højeste kvalitet og bruger moderne teknik for bedste resultater.',
     icon: ShieldCheckIcon,
   },
   {
     name: 'Omsorg',
-    description: 'Varje patient är unik och vi tar oss tid att lyssna och förstå dina behov.',
+    description: 'Hver patient er unik, og vi tager os tid til at lytte og forstå dine behov.',
     icon: HeartIcon,
   },
   {
     name: 'Innovation',
-    description: 'Vi följer de senaste metoderna och investerar i modern utrustning.',
+    description: 'Vi følger de nyeste metoder og investerer i moderne udstyr.',
     icon: SparklesIcon,
   },
   {
-    name: 'Tillgänglighet',
-    description: 'Vi finns här för dig med flexibla tider och snabb akuthjälp när du behöver oss.',
+    name: 'Tilgængelighed',
+    description: 'Vi er her for dig med fleksible tider og hurtig akuthjælp, når du har brug for os.',
     icon: UserGroupIcon,
   },
 ]
@@ -30,28 +30,28 @@ const values = [
 const teamMembers = [
   {
     name: 'Saif Al Waily',
-    role: 'Allmäntandläkare',
+    role: 'Almindelig tandlæge',
     image: '/images/newpics/saif_new.jpg',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Ammar Al Waily',
-    role: 'Allmäntandläkare',
+    role: 'Almindelig tandlæge',
     image: '/images/newpics/ammar_new.jpg',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Martin Akej',
-    role: 'Allmäntandläkare',
+    role: 'Almindelig tandlæge',
     image: '/images/newpics/martin_new.jpg',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Bashar Bashir',
-    role: 'Allmäntandläkare',
+    role: 'Almindelig tandlæge',
     image: '/images/Bashar.png',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
@@ -65,21 +65,21 @@ const teamMembers = [
   },
   {
     name: 'Mikael Korduner',
-    role: 'Övertandläkare/Käkkirurg',
+    role: 'Overtandlæge/Kæbekirurg',
     image: '/images/mickeal.png',
     hasPhoto: true,
     imagePosition: 'object-center'
   },
   {
     name: 'Aleksander Milosavljevic',
-    role: 'Övertandläkare/Parodontolog',
+    role: 'Overtandlæge/Parodontolog',
     image: '/images/alex.png',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Benrt Shcuss',
-    role: 'Allmäntandläkare',
+    role: 'Almindelig tandlæge',
     image: '/images/Bert.png',
     hasPhoto: true,
     imagePosition: 'object-center'
@@ -93,28 +93,28 @@ const teamMembers = [
   },
   {
     name: 'Elin Hansson',
-    role: 'Tandsköterska',
+    role: 'Tandplejerske',
     image: '/images/newpics/elin_hansson_new.JPG',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Juliana Doroftei',
-    role: 'Tandsköterska',
+    role: 'Tandplejerske',
     image: '/images/newpics/juliana_new.jpg',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Mona Brinck',
-    role: 'Tandsköterska',
+    role: 'Tandplejerske',
     image: '/images/mona.png',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
   },
   {
     name: 'Elin Bengtsson',
-    role: 'Tandsköterska',
+    role: 'Tandplejerske',
     image: '/images/newpics/elin_bengtsson_new.jpg',
     hasPhoto: true,
     imagePosition: 'object-top sm:object-center'
@@ -131,10 +131,10 @@ export default function OmOssPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-dental-900 sm:text-6xl">
-              En tandvårdstradition sedan 1968
+              En tandplejetradition siden 1968
             </h1>
             <p className="mt-6 text-lg leading-8 text-dental-600">
-              Välkommen till Art of Dent, där stolthet i vårt historiska arv som sträcker sig tillbaka till 1968 möter nytänkande i händerna på tandläkarbröderna Saif Al Waily och Ammar Al Waily, fjärde generationens tandvårdsexperter.
+              Velkommen til Art of Dent, hvor stolthed over vores historiske arv, der strækker sig tilbage til 1968, møder nytænkning i hænderne på tandlægebrødrene Saif Al Waily og Ammar Al Waily, fjerde generations tandplejeeksperter.
             </p>
           </div>
         </div>
@@ -157,19 +157,19 @@ export default function OmOssPage() {
             </div>
             <div>
               <div className="text-base leading-7 text-dental-700 lg:max-w-lg">
-                <p className="text-base font-semibold leading-7 text-primary-600">Välkommen till Art of dent!</p>
+                <p className="text-base font-semibold leading-7 text-primary-600">Velkommen til Art of Dent!</p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-dental-900 sm:text-4xl">
-                  Fjärde generationens tandläkare
+                  Fjerde generations tandlæger
                 </h2>
                 <div className="mt-6 space-y-6">
                   <p>
-                    Hos Art of Dent välkomnar tandläkarbröderna Saif Al Waily och Ammar Al Waily både vuxna och barn till tandvårdskliniken. Med en rik historia som sträcker sig tillbaka till 1968, är vi stolta över att fortsätta denna tradition som fjärde generationens tandläkare.
+                    Hos Art of Dent byder tandlægebrødrene Saif Al Waily og Ammar Al Waily både voksne og børn velkommen til tandlægeklinikken. Med en rig historie, der strækker sig tilbage til 1968, er vi stolte af at fortsætte denne tradition som fjerde generations tandlæger.
                   </p>
                   <p>
-                    Vårt moderna team består av tre tandläkare, en tandhygienist och tre tandsköterskor. Tillsammans erbjuder vi en bred och mångsidig allmäntandvård. Med en djup förståelse för att hantera tandvårdsrädsla är vår strävan att omskapa varje besök hos oss till en positiv och förtroendeingivande upplevelse.
+                    Vores moderne team består af tre tandlæger, en tandhygiejnist og tre tandplejersker. Sammen tilbyder vi bred og alsidig almindelig tandpleje. Med en dyb forståelse for at håndtere tandplejeangst er vores mål at omdanne hvert besøg hos os til en positiv og tillidsvækkende oplevelse.
                   </p>
                   <p>
-                    För de som önskar tandreglering står toppmodern Invisalign-teknik till buds, och vid mer utmanande fall har vi möjligheten att remittera till specialister.
+                    For dem, der ønsker tandregulering, står topmoderne Invisalign-teknik til rådighed, og ved mere udfordrende tilfælde har vi mulighed for at henvise til specialister.
                   </p>
                 </div>
               </div>
@@ -183,10 +183,10 @@ export default function OmOssPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-dental-900 sm:text-4xl">
-              Våra värderingar
+              Vores værdier
             </h2>
             <p className="mt-6 text-lg leading-8 text-dental-600">
-              Vi bygger vår verksamhet på fyra grundpelare som styr allt vi gör
+              Vi bygger vores virksomhed på fire grundpiller, som styrer alt, hvad vi gør
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -214,10 +214,10 @@ export default function OmOssPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-dental-900 sm:text-4xl">
-              Möt vårt expertteam
+              Mød vores ekspertteam
             </h2>
             <p className="mt-6 text-lg leading-8 text-dental-600">
-              Vårt erfarna team av specialister och vårdpersonal arbetar tillsammans för att ge dig den bästa tandvården
+              Vores erfarne team af specialister og sundhedspersonale arbejder sammen for at give dig den bedste tandpleje
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 xl:grid-cols-5">
@@ -251,17 +251,17 @@ export default function OmOssPage() {
       <div className="bg-gradient-to-r from-primary-600 to-primary-700 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Redo att bli en del av vår familj?
+            Klar til at blive en del af vores familie?
           </h2>
           <p className="mt-4 text-lg text-primary-100">
-            Välkommen att boka ditt första besök hos oss
+            Velkommen til at booke dit første besøg hos os
           </p>
           <div className="mt-8 flex items-center justify-center">
             <Link
               href="/boka-tid"
               className="rounded-full bg-accent-400 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 transition-all"
             >
-              BOKA ONLINE
+              BOOK ONLINE
             </Link>
           </div>
         </div>

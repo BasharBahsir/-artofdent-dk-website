@@ -9,20 +9,20 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Hur kan ni hjälpa mig med tandvårdsrädsla?",
-    answer: "Vi har stor erfarenhet av att hjälpa patienter med tandvårdsrädsla. Vi arbetar i din takt, förklarar allt vi gör och kan erbjuda lugnande medel eller lustgas för att göra besöket bekvämare."
+    question: "Hvordan kan I hjælpe mig med tandlægeangst?",
+    answer: "Vi har stor erfaring med at hjælpe patienter med tandlægeangst. Vi arbejder i dit tempo, forklarer alt, hvad vi gør, og kan tilbyde beroligende medicin eller lattergas for at gøre besøget mere behageligt. Som dansk patient får du samme omsorgsfulde behandling til en brøkdel af prisen sammenlignet med København."
   },
   {
-    question: "Kan jag få bedövning även för enklare behandlingar?",
-    answer: "Absolut! Vi anpassar behandlingen efter dina behov. Om du känner dig tryggare med bedövning även för enklare ingrepp så ordnar vi det."
+    question: "Kan jeg få bedøvelse selv til enklere behandlinger?",
+    answer: "Absolut! Vi tilpasser behandlingen efter dine behov. Hvis du føler dig tryggere med bedøvelse selv til enklere indgreb, så ordner vi det."
   },
   {
-    question: "Vad är lustgas och hur fungerar det?",
-    answer: "Lustgas är en säker och effektiv metod för att minska ångest. Du andas in gasen genom en mask och känner dig avslappnad och lugn, men är fullt medveten under behandlingen."
+    question: "Hvad er lattergas, og hvordan virker det?",
+    answer: "Lattergas er en sikker og effektiv metode til at reducere angst. Du indånder gassen gennem en maske og føler dig afslappet og rolig, men er fuldt bevidst under behandlingen."
   },
   {
-    question: "Kan jag ta med en anhörig till behandlingen?",
-    answer: "Ja, du är välkommen att ta med en anhörig för stöd. Vi vill att du ska känna dig så trygg och bekväm som möjligt under ditt besök."
+    question: "Kan jeg tage en pårørende med til behandlingen?",
+    answer: "Ja, du er velkommen til at tage en pårørende med for støtte. Vi vil, at du skal føle dig så tryg og behagelig som muligt under dit besøg."
   }
 ]
 
@@ -44,20 +44,20 @@ export default function TandvardsradslaPage() {
             {/* Left side - Content */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                Tandvårdsrädsla
+                Tandlægeangst
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Vi förstår att tandvårdsrädsla är vanligt och tar dina känslor på allvar. Vårt team har stor erfarenhet av att hjälpa rädda patienter att få den tandvård de behöver i en trygg miljö.
+                Vi forstår, at tandlægeangst er almindelig og tager dine følelser alvorligt. Vores team har stor erfaring med at hjælpe angste patienter med at få den tandpleje, de har brug for, i et trygt miljø. Som dansk patient får du denne specialiserede omsorg til en brøkdel af prisen sammenlignet med København, og vi dækker din rejse over Øresund!
               </p>
               
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Trygg och förståelsefull personal</span>
+                  <span className="text-neutral-600">Tryg og forstående personale</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Lustgas och lugnande medel</span>
+                  <span className="text-neutral-600">Lattergas og beroligende medicin</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
@@ -103,7 +103,7 @@ export default function TandvardsradslaPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

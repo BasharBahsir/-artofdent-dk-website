@@ -20,14 +20,14 @@ export default function BookingPage() {
   })
 
   const treatments = [
-    'Allmän undersökning',
-    'Tandimplantat',
+    'Almindelig undersøgelse',
+    'Tandimplantater',
     'Tandblekning',
-    'Akut tandvård',
+    'Akut tandpleje',
     'Ortodonti',
-    'Tandsten/rengöring',
-    'Rotfyllning',
-    'Annat'
+    'Tandsten/rensning',
+    'Rodfyldning',
+    'Andet'
   ]
 
   const timeSlots = [
@@ -87,17 +87,17 @@ export default function BookingPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">
-              Boka din tid
+              Book din tid
             </h1>
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Välj klinik och fyll i dina uppgifter så kontaktar vi dig för att bekräfta din bokning.
+              Vælg klinik og udfyld dine oplysninger, så kontakter vi dig for at bekræfte din booking. Som dansk patient dækker vi din rejse over Øresund!
             </p>
           </div>
 
           {/* Clinic Selection */}
           <div className="mt-12 bg-white rounded-2xl shadow-sm p-6">
             <h2 className="text-xl font-semibold text-neutral-900 mb-4">
-              1. Välj klinik
+              1. Vælg klinik
             </h2>
             
             {selectedClinic ? (
@@ -114,7 +114,7 @@ export default function BookingPage() {
                   onClick={() => setShowClinicSelector(true)}
                   className="text-sm font-medium text-primary-600 hover:text-primary-500"
                 >
-                  Byt klinik
+                  Skift klinik
                 </button>
               </div>
             ) : (
@@ -122,7 +122,7 @@ export default function BookingPage() {
                 onClick={() => setShowClinicSelector(true)}
                 className="w-full p-4 border-2 border-dashed border-neutral-300 rounded-lg text-neutral-500 hover:border-primary-300 hover:text-primary-600 transition-colors"
               >
-                Klicka för att välja klinik
+                Klik for at vælge klinik
               </button>
             )}
           </div>
@@ -130,14 +130,21 @@ export default function BookingPage() {
           {/* Booking Form */}
           <form onSubmit={handleSubmit} className="mt-8 bg-white rounded-2xl shadow-sm p-6">
             <h2 className="text-xl font-semibold text-neutral-900 mb-6">
-              2. Dina uppgifter
+              2. Dine oplysninger
             </h2>
+            
+            {/* Danish Patient Notice */}
+            <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+              <p className="text-sm text-blue-800">
+                <strong>Til danske patienter:</strong> Vi dækker dine rejseomkostninger over Øresund! Husk at nævne dette når du booker.
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-2">
-                  Namn *
+                  Navn *
                 </label>
                 <div className="relative">
                   <UserIcon className="absolute left-3 top-3 h-5 w-5 text-neutral-400" />
@@ -148,7 +155,7 @@ export default function BookingPage() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="block w-full pl-10 pr-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                    placeholder="Ditt fullständiga namn"
+                    placeholder="Dit fulde navn"
                   />
                 </div>
               </div>
@@ -167,7 +174,7 @@ export default function BookingPage() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="block w-full pl-10 pr-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                    placeholder="070-123 45 67"
+                    placeholder="+45 12 34 56 78 (dansk) eller 070-123 45 67 (svensk)"
                   />
                 </div>
               </div>
@@ -175,7 +182,7 @@ export default function BookingPage() {
               {/* Email */}
               <div className="sm:col-span-2">
                 <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-2">
-                  E-post *
+                  E-mail *
                 </label>
                 <div className="relative">
                   <EnvelopeIcon className="absolute left-3 top-3 h-5 w-5 text-neutral-400" />
@@ -203,7 +210,7 @@ export default function BookingPage() {
                   onChange={(e) => setFormData({ ...formData, treatment: e.target.value })}
                   className="block w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                 >
-                  <option value="">Välj behandling</option>
+                  <option value="">Vælg behandling</option>
                   {treatments.map((treatment) => (
                     <option key={treatment} value={treatment}>
                       {treatment}
@@ -215,7 +222,7 @@ export default function BookingPage() {
               {/* Preferred Date */}
               <div>
                 <label htmlFor="preferredDate" className="block text-sm font-medium text-neutral-700 mb-2">
-                  Önskat datum
+                  Ønsket dato
                 </label>
                 <div className="relative">
                   <CalendarIcon className="absolute left-3 top-3 h-5 w-5 text-neutral-400" />
@@ -232,7 +239,7 @@ export default function BookingPage() {
               {/* Preferred Time */}
               <div>
                 <label htmlFor="preferredTime" className="block text-sm font-medium text-neutral-700 mb-2">
-                  Önskad tid
+                  Ønsket tid
                 </label>
                 <div className="relative">
                   <ClockIcon className="absolute left-3 top-3 h-5 w-5 text-neutral-400" />
@@ -242,7 +249,7 @@ export default function BookingPage() {
                     onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
                     className="block w-full pl-10 pr-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                   >
-                    <option value="">Välj tid</option>
+                    <option value="">Vælg tid</option>
                     {timeSlots.map((time) => (
                       <option key={time} value={time}>
                         {time}
@@ -255,7 +262,7 @@ export default function BookingPage() {
               {/* Message */}
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-2">
-                  Meddelande (valfritt)
+                  Besked (valgfrit)
                 </label>
                 <textarea
                   id="message"
@@ -263,7 +270,7 @@ export default function BookingPage() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="block w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                  placeholder="Beskriv eventuella besvär eller önskemål..."
+                  placeholder="Beskriv eventuelle gener eller ønsker..."
                 />
               </div>
             </div>
@@ -278,8 +285,8 @@ export default function BookingPage() {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <h3 className="text-sm font-medium text-green-800">Bokningsförfrågan skickad!</h3>
-                    <p className="mt-1 text-sm text-green-700">Vi kontaktar dig inom 24 timmar för att bekräfta din bokning.</p>
+                    <h3 className="text-sm font-medium text-green-800">Bookingforespørgsel sendt!</h3>
+                    <p className="mt-1 text-sm text-green-700">Vi kontakter dig inden for 24 timer for at bekræfte din booking.</p>
                   </div>
                 </div>
               </div>
@@ -294,8 +301,8 @@ export default function BookingPage() {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <h3 className="text-sm font-medium text-red-800">Något gick fel</h3>
-                    <p className="mt-1 text-sm text-red-700">Försök igen eller ring oss direkt på 040-12 11 08.</p>
+                    <h3 className="text-sm font-medium text-red-800">Noget gik galt</h3>
+                    <p className="mt-1 text-sm text-red-700">Prøv igen eller ring til os direkte på +46 40-12 11 08.</p>
                   </div>
                 </div>
               </div>
@@ -308,11 +315,11 @@ export default function BookingPage() {
                 disabled={!selectedClinic || isSubmitting}
                 className="w-full rounded-lg bg-accent-400 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-400 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
-                {isSubmitting ? 'Skickar...' : 'Skicka bokningsförfrågan'}
+                {isSubmitting ? 'Sender...' : 'Send bookingforespørgsel'}
               </button>
               {submitStatus !== 'success' && (
                 <p className="mt-2 text-sm text-neutral-500 text-center">
-                  Vi kontaktar dig inom 24 timmar för att bekräfta din bokning.
+                  Vi kontakter dig inden for 24 timer for at bekræfte din booking.
                 </p>
               )}
             </div>

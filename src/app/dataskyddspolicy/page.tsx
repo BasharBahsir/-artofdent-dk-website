@@ -11,10 +11,10 @@ export default function DataskyddspolicyPage() {
       <div className="bg-gradient-to-r from-primary-600 to-primary-700 py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Dataskyddspolicy
+            Databeskyttelsespolitik
           </h1>
           <p className="mt-6 text-lg leading-8 text-primary-100">
-            Information om hur vi på Art of Dent behandlar dina personuppgifter
+            Information om hvordan vi hos Art of Dent behandler dine personoplysninger
           </p>
         </div>
       </div>
@@ -24,42 +24,42 @@ export default function DataskyddspolicyPage() {
         <div className="prose prose-lg max-w-none">
           
           <p className="text-lg text-gray-700 mb-8">
-            Art of Dent värnar om din integritet och är engagerade i att skydda dina personuppgifter. 
-            Denna dataskyddspolicy förklarar hur vi samlar in, använder och skyddar din information i enlighet med 
-            EU:s allmänna dataskyddsförordning (GDPR) och svensk lagstiftning.
+            Art of Dent Academy AB værner om din integritet og er engageret i at beskytte dine personoplysninger. 
+            Denne databeskyttelsespolitik forklarer, hvordan vi indsamler, bruger og beskytter dine oplysninger i overensstemmelse med 
+            EU&apos;s generelle databeskyttelsesforordning (GDPR) og svensk lovgivning.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Personuppgiftsansvarig</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Dataansvarlig</h2>
           <p className="text-gray-700 mb-6">
-            Art of Dent är personuppgiftsansvarig för behandlingen av dina personuppgifter. 
-            Om du har frågor om hur vi behandlar dina personuppgifter är du välkommen att kontakta oss:
+            Art of Dent Academy AB er dataansvarlig for behandlingen af dine personoplysninger. 
+            Hvis du har spørgsmål om, hvordan vi behandler dine personoplysninger, er du velkommen til at kontakte os:
           </p>
           <div className="bg-gray-50 p-6 rounded-lg mb-6">
-            <p className="text-gray-700 mb-2"><strong>Art of Dent</strong></p>
+            <p className="text-gray-700 mb-2"><strong>Art of Dent Academy AB</strong></p>
             <p className="text-gray-700 mb-2">Hantverkaregatan 6D, 211 22 Malmö</p>
-            <p className="text-gray-700 mb-2">Telefon: 040-121 108</p>
+            <p className="text-gray-700 mb-2">Telefon: +46 40-12 11 08</p>
             <p className="text-gray-700">E-post: Artofdent.klinik@gmail.com</p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Vilka personuppgifter samlar vi in?</h2>
-          <p className="text-gray-700 mb-4">Vi samlar in och behandlar följande personuppgifter:</p>
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Hvilke personoplysninger indsamler vi?</h2>
+          <p className="text-gray-700 mb-4">Vi indsamler og behandler følgende personoplysninger:</p>
           <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-            <li><strong>Identifikationsuppgifter:</strong> Namn, personnummer, adress, telefonnummer, e-postadress</li>
-            <li><strong>Hälsouppgifter:</strong> Journalanteckningar, behandlingshistorik, röntgenbilder, medicinska bedömningar</li>
-            <li><strong>Ekonomiska uppgifter:</strong> Faktureringsuppgifter, betalningshistorik</li>
-            <li><strong>Bokningsuppgifter:</strong> Tidsbokning, behandlingstyp, tidigare besök</li>
-            <li><strong>Tekniska uppgifter:</strong> IP-adress, cookies vid användning av vår webbplats</li>
+            <li><strong>Identifikationsoplysninger:</strong> Navn, personnummer, adresse, telefonnummer, e-postadresse</li>
+            <li><strong>Sundhedsoplysninger:</strong> Journalnotater, behandlingshistorik, røntgenbilleder, medicinske vurderinger</li>
+            <li><strong>Ekonomiske oplysninger:</strong> Faktureringsoplysninger, betalingshistorik</li>
+            <li><strong>Bookingoplysninger:</strong> Tidsbestilling, behandlingstype, tidligere besøg</li>
+            <li><strong>Tekniske oplysninger:</strong> IP-adresse, cookies ved brug af vores hjemmeside</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Varför behandlar vi dina personuppgifter?</h2>
-          <p className="text-gray-700 mb-4">Vi behandlar dina personuppgifter för följande ändamål:</p>
+          <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Hvorfor behandler vi dine personoplysninger?</h2>
+          <p className="text-gray-700 mb-4">Vi behandler dine personoplysninger til følgende formål:</p>
           <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-            <li><strong>Patientvård:</strong> För att kunna ge dig tandvård och följa upp din behandling</li>
-            <li><strong>Journalföring:</strong> Enligt patientdatalagen är vi skyldiga att föra patientjournal</li>
-            <li><strong>Bokningar:</strong> För att administrera dina tidsbokningar och påminnelser</li>
-            <li><strong>Fakturering:</strong> För att fakturera våra tjänster och hantera betalningar</li>
-            <li><strong>Rättsliga krav:</strong> För att uppfylla våra lagstadgade skyldigheter</li>
-            <li><strong>Kommunikation:</strong> För att kontakta dig om din behandling och viktiga meddelanden</li>
+            <li><strong>Patientpleje:</strong> For at kunne give dig tandpleje og følge op på din behandling</li>
+            <li><strong>Journalføring:</strong> Ifølge patientdataloven er vi forpligtet til at føre patientjournal</li>
+            <li><strong>Bookinger:</strong> For at administrere dine tidsbestillinger og påmindelser</li>
+            <li><strong>Fakturering:</strong> For at fakturere vores tjenester og håndtere betalinger</li>
+            <li><strong>Juridiske krav:</strong> For at opfylde vores lovbestemte forpligtelser</li>
+            <li><strong>Kommunikation:</strong> For at kontakte dig om din behandling og vigtige meddelelser</li>
           </ul>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Laglig grund för behandling</h2>

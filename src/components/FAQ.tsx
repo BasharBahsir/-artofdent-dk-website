@@ -4,16 +4,16 @@ import { ChevronDownIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
   { 
-    question: 'Har jag tillgång till tandvårdsstödet?', 
-    answer: 'Ja, vi hjälper dig med tandvårdsbidrag och högkostnadsskydd. Från 23 år får du 300 kr per år i allmänt tandvårdsbidrag, och vid höga kostnader kan du få högkostnadsskydd som täcker 50-85% av kostnaden över 3000 kr per år.'
+    question: 'Har jeg adgang til tandplejeydelser?', 
+    answer: 'Som dansk patient tilbyder vi betydelige besparelser sammenlignet med København. Vi hjælper dig med at forstå dine muligheder og dækker endda dine rejseomkostninger over Øresund. Kontakt os for personlig rådgivning om priser og behandlingsmuligheder.'
   },
   { 
-    question: 'Jag vill lista mig hos er, hur gör jag?', 
-    answer: 'Ring oss på Artofdent 040-12 11 08 eller ABC Tandklinikgruppen 040-18 44 00 så hjälper vi dig med listningen. Du kan också komma till kliniken så ordnar vi allt på plats. Listning är kostnadsfri och du kan byta när du vill.'
+    question: 'Jeg vil gerne være patient hos jer, hvordan gør jeg?', 
+    answer: 'Ring til os på Artofdent 040-12 11 08 eller ABC Tandklinikgruppen 040-18 44 00, så hjælper vi dig med tilmeldingen. Du kan også komme til klinikken, så ordner vi alt på stedet. Tilmelding er gratis, og du kan skifte når du vil.'
   },
   { 
-    question: 'Hur bokar eller avbokar jag min tid?', 
-    answer: 'Du kan boka tid online via vår hemsida, ringa oss direkt, eller skicka ett meddelande via kontaktformuläret. För avbokning, ring oss senast 24 timmar innan din tid för att undvika avgift. Vi erbjuder flexibla tider för att passa ditt schema.'
+    question: 'Hvordan booker eller afbestiller jeg min tid?', 
+    answer: 'Du kan booke tid online via vores hjemmeside, ringe til os direkte eller sende en besked via kontaktformularen. For afbestilling skal du ringe til os senest 24 timer før din tid for at undgå gebyr. Vi tilbyder fleksible tider, der passer til dit skema.'
   }
 ]
 
@@ -31,12 +31,12 @@ export default function FAQ() {
           {/* Left side - Title and Image */}
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-8 leading-tight">
-              Vanliga frågor och svar
+              Ofte stillede spørgsmål
             </h2>
             <div className="relative">
               <Image
                 src="/images/Miljöfoton på kliniken (1).jpg"
-                alt="Art of Dent reception - Välkomnande miljö"
+                alt="Art of Dent reception - Velkomstmiljø"
                 width={500}
                 height={375}
                 className="w-full h-auto rounded-lg shadow-sm"

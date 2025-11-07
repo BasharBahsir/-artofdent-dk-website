@@ -69,21 +69,21 @@ export default function CookieConsent() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sm font-medium">Cookie-inställningar</span>
+            <span className="text-sm font-medium">Cookie-indstillinger</span>
           </div>
         </div>
 
         {/* Tabs */}
         <div className="flex border-b">
           <button
-            onClick={() => setActiveTab('samtycke')}
+            onClick={() => setActiveTab('samtykke')}
             className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
-              activeTab === 'samtycke'
+              activeTab === 'samtykke'
                 ? 'border-primary-700 text-primary-700'
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
-            Samtycke
+            Samtykke
           </button>
           <button
             onClick={() => setActiveTab('information')}
@@ -111,20 +111,20 @@ export default function CookieConsent() {
         <div className="p-6">
           {activeTab === 'samtycke' && (
             <div>
-              <h2 className="text-lg font-semibold mb-4">Vi använder cookies!</h2>
+              <h2 className="text-lg font-semibold mb-4">Vi bruger cookies!</h2>
               <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                På Artofdent.se använder vi <strong>cookies</strong> att anpassa innehållet och annonserna till våra användare, tillhandahålla 
-                funktioner för sociala medier och analysera vår trafik. Vi vidarebefordrar även sådana identifierare och annan 
-                information från din enhet till de sociala medier och annons- och analysföretag som vi samarbetar med. Dessa kan i sin 
-                tur kombinera informationen med annan information som du har tillhandahållit eller som de har samlat in när du har 
-                använt deras tjänster.
+                På Artofdent.dk bruger vi <strong>cookies</strong> til at tilpasse indholdet og annoncerne til vores brugere, levere 
+                funktioner til sociale medier og analysere vores trafik. Vi videregiver også sådanne identifikatorer og andre 
+                oplysninger fra din enhed til de sociale medier og annonce- og analysevirksomheder, som vi samarbejder med. Disse kan 
+                igen kombinere oplysningerne med andre oplysninger, som du har leveret, eller som de har indsamlet, når du har 
+                brugt deres tjenester.
               </p>
 
               {/* Cookie Categories */}
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-medium">Nödvändig</h3>
+                    <h3 className="font-medium">Nødvendig</h3>
                   </div>
                   <div className="relative">
                     <input
@@ -141,7 +141,7 @@ export default function CookieConsent() {
 
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-medium">Inställningar</h3>
+                    <h3 className="font-medium">Indstillinger</h3>
                   </div>
                   <div className="relative">
                     <input

@@ -9,26 +9,26 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Hur snabbt kan ni ta emot mig?",
-    answer: "Vi på Art of Dent strävar efter att kunna hjälpa dig som söker akut tandvård så snabbt som möjligt och kan nästan alltid ge dig en tid inom ett par timmar. Tillgänglig tandvård är viktigt för oss, det ska vara enkelt att gå till tandläkaren och det ska gå snabbt att få hjälp. Vi har dagligen flera tider avsatta för akut tandvård. Hittar du inte en passande tid via vår onlinebokning kan du ringa oss på 040-121 108 så ska vi göra vårt bästa för att hitta en lämplig tid."
+    question: "Hvor hurtigt kan I tage imod mig?",
+    answer: "Vi på Art of Dent stræber efter at kunne hjælpe dig, som søger akut tandpleje, så hurtigt som muligt og kan næsten altid give dig en tid inden for et par timer. Tilgængelig tandpleje er vigtigt for os - det skal være nemt at gå til tandlægen, og det skal gå hurtigt at få hjælp. Vi har dagligt flere tider afsat til akut tandpleje. Finder du ikke en passende tid via vores onlinebooking, kan du ringe til os på 040-121 108, så gør vi vores bedste for at finde en passende tid. Som dansk patient dækker vi dine rejseomkostninger over Øresund."
   },
   {
-    question: "Jag har slagit ut en tand, vad gör jag?",
-    answer: "Om du har slagit ut en tand är viktigt att du söker akut tandvård. Kontakta in tandläkare för att boka en tid. Ju snabbare du får hjälp desto större är möjligheterna att rädda tanden. Om det går är det bäst att förvara tanden i munnen, tänkt då på att tanden är ren. Om det inte går är ett glas mjölk det nästbästa förvaringssättet. Förvara inte tanden i ett glas med vatten, då kan tandroten skadas."
+    question: "Jeg har slået en tand ud - hvad gør jeg?",
+    answer: "Hvis du har slået en tand ud, er det vigtigt, at du søger akut tandpleje. Kontakt din tandlæge for at booke en tid. Jo hurtigere du får hjælp, desto større er mulighederne for at redde tanden. Hvis det er muligt, er det bedst at opbevare tanden i munden - tænk på, at tanden skal være ren. Hvis det ikke er muligt, er et glas mælk den næstbedste opbevaringsmåde. Opbevar ikke tanden i et glas vand, da det kan skade tandroden."
   },
   {
-    question: "Mitt barn har slagit ut en tand, vad gör jag?",
-    answer: "Om ett barn slagit ut en tand ska du alltid kontakta barnets ordinarie tandläkare. Om de inte kan ta emot er kan ni kontakta oss. I Sverige är tandvården kostnadsfri till det år barnet fyller 19 år, Det gäller även akut tandvård. Det innebär att ni inte behöver betala för besöket oavsett vilket tandläkare ni går till. Viktigt att komma ihåg är att om ditt barn slagit ut en mjölktand är det viktigt att aldrig försöka sätta tillbaka tanden. Eftersom det kan skada de underliggande permanenta tänder."
+    question: "Mit barn har slået en tand ud - hvad gør jeg?",
+    answer: "Hvis et barn har slået en tand ud, skal du altid kontakte barnets sædvanlige tandlæge. Hvis de ikke kan tage imod jer, kan I kontakte os. I Sverige er tandplejen gratis indtil barnet fylder 19 år - det gælder også akut tandpleje. Det betyder, at I ikke behøver at betale for besøget, uanset hvilken tandlæge I går til. Vigtigt at huske: Hvis dit barn har slået en mælketand ud, er det vigtigt aldrig at forsøge at sætte tanden tilbage, da det kan skade de underliggende permanente tænder."
   },
   {
-    question: "Gör det ont att dra ut en tand?",
-    answer: "Det gör inte ont att dra ut en tand. Däremot kan det uppfattas som obehagligt. Efter en extraktion är det viktigt att följa tandläkarens rekommendationer."
+    question: "Gør det ondt at trække en tand ud?",
+    answer: "Det gør ikke ondt at trække en tand ud. Det kan dog opfattes som ubehageligt. Efter en ekstraktion er det vigtigt at følge tandlægens anbefalinger."
   },
   {
-    question: "Vart finns ni?",
-    answer: "Vi erbjuder akut tandvård på alla våra kliniker.",
+    question: "Hvor finder jeg jer?",
+    answer: "Vi tilbyder akut tandpleje på alle vores klinikker.",
     hasLink: true,
-    linkText: "kliniker",
+    linkText: "klinikker",
     linkHref: "/kontakt"
   }
 ]
@@ -50,24 +50,24 @@ export default function AkutTandvardPage() {
             {/* Left side - Content */}
             <div className="lg:pr-8">
               <h1 className="text-4xl font-normal text-gray-900 mb-8 leading-tight">
-                Akut ont i en tand
+                Akut tandpine
               </h1>
               
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  När olyckan är framme och du drabbas av akuta tandproblem är det viktigt att du kan få rätt hjälp snabbt. Oavsett om du har problem med tandvärk, ilningar eller har skadat en tand eller fyllning ska du inte behöva vänta på hjälp och gå omkring och ha ont. Därför erbjuder vi på Art of Dent akuttandvård av högsta kvalitet med generösa öppettider på vardagar och kvällar.
+                  Når ulykken er ude, og du rammes af akutte tandproblemer, er det vigtigt, at du kan få den rette hjælp hurtigt. Uanset om du har problemer med tandpine, stikkende smerter eller har beskadiget en tand eller fyldning, skal du ikke behøve at vente på hjælp og gå rundt med smerter. Derfor tilbyder vi på Art of Dent akut tandpleje af højeste kvalitet med generøse åbningstider på hverdage og aftener. Som dansk patient dækker vi dine rejseomkostninger over Øresund.
                 </p>
                 
                 <p>
-                  <strong>Har du akut ont? Ring oss på 040-121 108</strong>, vi gör alltid allt vi kan för att ordna en tid så fort som möjligt.
+                  <strong>Har du akutte smerter? Ring til os på 040-121 108</strong> - vi gør altid alt, hvad vi kan, for at arrangere en tid så hurtigt som muligt.
                 </p>
                 
                 <p>
-                  Hos oss får du hjälp av erfarna tandläkare och tandsköterskor som bara använder den allra modernaste utrustningen. Även om du har ont eller lider av tandläkarskräck är vi specialister på att ge dig en behaglig upplevelse, både före, under och efter behandlingen.
+                  Hos os får du hjælp af erfarne tandlæger og tandplejersker, som kun bruger det allernyeste udstyr. Selv om du har smerter eller lider af tandlægeangst, er vi specialister i at give dig en behagelig oplevelse - før, under og efter behandlingen.
                 </p>
                 
                 <p>
-                  På många akutkliniker är prispåslaget på kvällstid ofta högre. Vi på Art of Dent har schyssta priser och tar samma pris för tandvård under alla våra öppettider.
+                  På mange akutklinikker er pristillægget om aftenen ofte højere. Vi på Art of Dent har fair priser og tager samme pris for tandpleje i alle vores åbningstider. Danske patienter sparer endda endnu mere med vores gratis transport over Øresund.
                 </p>
               </div>
             </div>
@@ -115,11 +115,11 @@ export default function AkutTandvardPage() {
                   {/* Recent Review */}
                   <div className="mb-3">
                     <p className="text-sm text-gray-700 leading-relaxed">
-                      &ldquo;Väldigt trevlig personal och lugn atmosfär. Min dotter var nervös innan besöket, men tandläkaren fick henne att känna sig helt trygg. Rekommenderas varmt för barnfamiljer!&rdquo;
+                      &ldquo;Meget venligt personale og rolig atmosfære. Min datter var nervøs før besøget, men tandlægen fik hende til at føle sig helt tryg. Anbefales varmt til børnefamilier!&rdquo;
                     </p>
                   </div>
                   
-                  <p className="text-xs text-gray-500">Se alla våra Google recensioner →</p>
+                  <p className="text-xs text-gray-500">Se alle vores Google anmeldelser →</p>
                 </a>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function AkutTandvardPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

@@ -9,28 +9,28 @@ import { useState, useRef } from 'react'
 
 const faqs = [
   {
-    question: "Kostar det extra att lista mig hos er?",
-    answer: "Vi är auktoriserade av Region Skåne och erbjuder en kostnadsfri registrering för ditt barn hos oss. Detta innebär att du inte behöver oroa dig för några kostnader när du listar ditt barn hos vår klinik. Vårt samarbete med Region Skåne möjliggör en smidig och bekymmersfri upplevelse för dig och ditt barn."
+    question: "Hvad koster børnetandpleje for danske patienter?",
+    answer: "Som danske patienter betaler I direkte for behandlingen, men får betydelige besparelser sammenlignet med København. Vi tilbyder konkurrencedygtige priser på børnetandpleje, og vigtigst af alt - vi dækker jeres rejseomkostninger over Øresund! Kontakt os for aktuelle priser på børnebehandlinger."
   },
   {
-    question: "Var ligger er klinik?",
-    answer: "Vi finns på Södra första gatan 31 i Malmö."
+    question: "Hvor ligger jeres klinik?",
+    answer: "Vi findes på Södra Förstadsgatan 31 i Malmö - let tilgængeligt fra København med tog over Øresund."
   },
   {
-    question: "Tar det långt tid att byta?",
-    answer: "Nej, allt du behöver göra är att byta mottagning på 1177."
+    question: "Hvordan booker jeg tid til mit barn?",
+    answer: "Som dansk patient kan du bare booke tid direkte hos os online eller ringe til +46 40-18 44 00. Vi hjælper gerne danske familier med hele processen og sørger for, at dit barn får den bedste behandling."
   },
   {
-    question: "Kan jag välja tandläkare?",
-    answer: "Självklart är det du och ditt barn som får välja den tandläkare ni känner er mest bekväma med. Vi strävar efter att skapa en flexibel och anpassningsbar upplevelse där ni kan hitta den tandläkare som passar era behov och önskemål bäst. Er komfort och tillit är vår prioritet när det gäller att erbjuda en positiv och anpassad vård."
+    question: "Kan jeg vælge tandlæge?",
+    answer: "Selvfølgelig er det dig og dit barn, der får lov til at vælge den tandlæge, I føler jer mest trygge ved. Vi stræber efter at skabe en fleksibel og tilpasningsvenlig oplevelse, hvor I kan finde den tandlæge, der passer jeres behov og ønsker bedst. Jeres komfort og tillid er vores prioritet, når det gælder om at tilbyde positiv og tilpasset pleje."
   },
   {
-    question: "Varför ska jag byta?",
-    answer: "Med en lång och gedigen erfarenhet inom barntandvård, är vårt främsta mål att ge ditt barn den bästa möjliga upplevelsen. Vi strävar efter att skapa en trygg och positiv miljö där varje barn kan känna sig bekvämt. Din tillit är vår motivation när vi arbetar för att säkerställa ditt barns välmående och en hälsosam tandhälsa."
+    question: "Hvorfor vælge jer til børnetandpleje?",
+    answer: "Med lang og solid erfaring inden for børnetandpleje er vores primære mål at give dit barn den bedst mulige oplevelse til konkurrencedygtige priser. Vi stræber efter at skabe et trygt og positivt miljø, hvor hvert barn kan føle sig trygt. Som danske patienter får I betydelige besparelser sammenlignet med København, og vi dækker endda rejseomkostningerne over Øresund!"
   },
   {
-    question: "Kan man utföra tandställning för barn hos er?",
-    answer: "Ja. Vår barntandläkare och tandregleringsspecialist övervakar din bettutveckling och erbjuder stöd när det behövs, inklusive möjlighet till tandställning."
+    question: "Kan man få tandregulering for børn hos jer?",
+    answer: "Ja. Vores børnetandlæge og tandregleringsspecialist overvåger dit barns bidudvikling og tilbyder støtte, når det er nødvendigt, inklusive mulighed for tandregulering."
   }
 ]
 
@@ -67,36 +67,36 @@ export default function BarnTandvardPage() {
             {/* Left side - Content */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                Barn tandvård
+                Børnetandpleje
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Ditt barns trygga punkt från början till slut. Vi fokuserar på att ge varje barn en bekymmersfri tandvårdsupplevelse med vårt erfarna team av specialister.
+                Dit barns trygge sted fra start til slut. Vi fokuserer på at give hvert barn en bekymringsfri tandplejeoplevelse med vores erfarne team af specialister. Som danske patienter får I betydelige besparelser sammenlignet med København!
               </p>
               
               <div className="mt-8 space-y-4">
                 <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary-600">
-                  <h3 className="font-semibold text-primary-800 mb-2">En del av Region Skåne</h3>
+                  <h3 className="font-semibold text-primary-800 mb-2">Specialister i børnetandpleje</h3>
                   <p className="text-primary-700 text-sm">
-                    Alla barn och ungdomar i åldrarna 0-19 år välkomna att listas hos oss. Vi är stolta över att vara en del av Region Skånes uppdrag.
+                    Professionel børnetandpleje til konkurrencedygtige priser. Vi tilbyder kvalitetstandpleje til danske familier med betydelige besparelser og vi dækker jeres rejse over Øresund!
                   </p>
-                  <Link href="https://www.1177.se" target="_blank" className="inline-flex items-center mt-2 text-primary-600 hover:text-primary-800 font-medium text-sm">
-                    Gå till 1177 →
+                  <Link href="/boka-tid" className="inline-flex items-center mt-2 text-primary-600 hover:text-primary-800 font-medium text-sm">
+                    Book tid nu →
                   </Link>
                 </div>
                 
                 <div className="flex items-start gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full mt-2 flex-shrink-0" />
                   <div>
-                    <span className="font-semibold text-neutral-900">Vi anpassar oss efter ditt barn</span>
-                    <p className="text-neutral-600">Vi fokuserar på att ge varje barn en bekymmersfri tandvårdsupplevelse med vårt erfarna team av specialister.</p>
+                    <span className="font-semibold text-neutral-900">Vi tilpasser os efter dit barn</span>
+                    <p className="text-neutral-600">Vi fokuserer på at give hvert barn en bekymringsfri tandplejeoplevelse med vores erfarne team af specialister.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full mt-2 flex-shrink-0" />
                   <div>
-                    <span className="font-semibold text-neutral-900">Barnbettsspecialist och akuthjälp</span>
-                    <p className="text-neutral-600">Med vår barntandläkare och tandregleringsspecialist följer vi din bettutveckling och ger stöd vid behov, inklusive tandställning. Vi hjälper även vid akuta problem som tandvärk eller skadade tänder.</p>
+                    <span className="font-semibold text-neutral-900">Børnebidsspecialist og akuthjælp</span>
+                    <p className="text-neutral-600">Med vores børnetandlæge og tandregleringsspecialist følger vi dit barns bidsudvikling og giver støtte ved behov, inklusive tandregulering. Vi hjælper også ved akutte problemer som tandpine eller skadede tænder.</p>
                   </div>
                 </div>
               </div>
@@ -106,13 +106,13 @@ export default function BarnTandvardPage() {
                   href="/boka-tid"
                   className="rounded-full bg-primary-700 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-primary-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700 transition-all hover:shadow-xl"
                 >
-                  BOKA ONLINE
+                  BOOK ONLINE
                 </Link>
                 <Link
                   href="/kontakt"
                   className="rounded-full border-2 border-secondary-400 bg-white px-8 py-3 text-base font-semibold text-secondary-400 shadow-lg hover:bg-secondary-400 hover:text-white hover:border-secondary-500 transition-all hover:shadow-xl"
                 >
-                  KONTAKTA OSS
+                  KONTAKT OS
                 </Link>
               </div>
             </div>
@@ -156,16 +156,16 @@ export default function BarnTandvardPage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="space-y-6 text-gray-700 leading-relaxed">
             <p className="text-lg">
-              Ge ditt barn den bästa starten för god tandhälsa genom att lista hos oss. Regelbundna och kostnadsfria undersökningar till och med 19-årsåldern. Med över 20 års erfarenhet bland personalen och djup kunskap inom barn- och ungdomstandvård strävar vi efter att skapa en trygg och bekväm miljö.
+              Giv dit barn den bedste start på god tandsundhed hos os. Med over 20 års erfaring blandt personalet og dyb viden inden for børne- og ungdomstandpleje stræber vi efter at skabe et trygt og behageligt miljø. Som danske patienter får I professionel børnetandpleje til konkurrencedygtige priser.
             </p>
             
             <div className="bg-accent-50 p-6 rounded-lg mt-8">
-              <h3 className="text-2xl font-bold text-accent-800 mb-3">Välj det bästa för ditt barn - välj oss</h3>
+              <h3 className="text-2xl font-bold text-accent-800 mb-3">Vælg det bedste for dit barn - vælg os</h3>
               <p className="text-accent-700 mb-3">
-                Lista ditt barn helt utan förpliktelser. Vi vill ge dig och ditt barn möjlighet till kvalitativ tandvård eftersom vi är säkra på att ni kommer att få en fantastisk upplevelse.
+                Vi tilbyder kvalitetstandpleje til danske familier med betydelige besparelser sammenlignet med København. Vi er sikre på, at I vil få en fantastisk oplevelse, og vi dækker endda jeres rejse over Øresund!
               </p>
               <p className="text-base text-accent-900">
-                <strong>Ring ABC Tandklinikgruppen på 040-18 44 00</strong> för att lista ditt barn eller få svar på dina frågor.
+                <strong>Ring ABC Tandklinikgruppen på +46 40-18 44 00</strong> for at booke tid eller få svar på dine spørgsmål.
               </p>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function BarnTandvardPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

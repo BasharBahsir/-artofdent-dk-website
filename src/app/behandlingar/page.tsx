@@ -4,53 +4,53 @@ import Link from 'next/link'
 
 const treatments = [
   {
-    name: 'Akut tandvård',
-    description: 'Vid tandvärk är det viktigt att kontakta en tandläkare.',
+    name: 'Akut tandpleje',
+    description: 'Ved tandpine er det vigtigt at kontakte en tandlæge.',
     slug: 'akut-tandvard'
   },
   {
-    name: 'Tandimplantat',
-    description: 'Ersättning av förlorade tänder med titaniumimplantat.',
+    name: 'Tandimplantater',
+    description: 'Erstatning af mistede tænder med titaniumimplantater.',
     slug: 'tandimplantat'
   },
   {
-    name: 'Estetisk tandvård',
-    description: 'För vackrare tänder och ett strålande leende.',
+    name: 'Æstetisk tandpleje',
+    description: 'For smukkere tænder og et strålende smil.',
     slug: 'estetisk-tandvard'
   },
   {
-    name: 'Tandreglering',
-    description: 'För sneda eller trångställda tänder.',
+    name: 'Tandregulering',
+    description: 'For skæve eller tætpakkede tænder.',
     slug: 'tandreglering'
   },
   {
-    name: 'Barn tandvård',
-    description: 'Tandvård för barn och ungdomar är kostnadsfri.',
+    name: 'Børnetandpleje',
+    description: 'Tandpleje for børn og unge er gratis.',
     slug: 'barnvard'
   },
   {
     name: 'Tandblekning',
-    description: 'Professionell tandblekning för vitare tänder.',
+    description: 'Professionel tandblekning for hvidere tænder.',
     slug: 'tandblekning'
   },
   {
-    name: 'Tandhygienist',
-    description: 'Professionell tandrengöring och förebyggande vård.',
+    name: 'Tandhygiejnist',
+    description: 'Professionel tandrensning og forebyggende pleje.',
     slug: 'tandhygienist'
   },
   {
-    name: 'Rotfyllning',
-    description: 'Behandling av infekterade tandrötter.',
+    name: 'Rodfyldning',
+    description: 'Behandling af inficerede tandrødder.',
     slug: 'rotfyllning'
   },
   {
-    name: 'Tandundersökning',
-    description: 'Den årliga undersökningen hos din tandläkare.',
+    name: 'Tandundersøgelse',
+    description: 'Den årlige undersøgelse hos din tandlæge.',
     slug: 'tandundersokning'
   },
   {
-    name: 'Tandvårdsrädsla',
-    description: 'Specialiserad vård för patienter med tandvårdsrädsla.',
+    name: 'Tandlægeangst',
+    description: 'Specialiseret pleje for patienter med tandlægeangst.',
     slug: 'tandvardsradsla'
   }
 ]
@@ -66,8 +66,11 @@ export default function BehandlingarPage() {
           {/* Page Title */}
           <div className="text-center mb-16">
             <h1 className="text-4xl font-normal text-gray-900 mb-4">
-              Alla våra behandlingar
+              Alle vores behandlinger
             </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Som dansk patient får du betydelige besparelser sammenlignet med København. Vi dækker endda din rejse over Øresund!
+            </p>
           </div>
 
           {/* Treatments Grid */}
@@ -93,24 +96,24 @@ export default function BehandlingarPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="max-w-2xl">
             <h2 className="text-4xl font-normal text-orange-600 mb-6">
-              Dags för en undersökning?
+              Tid til en undersøgelse?
             </h2>
             <p className="text-gray-700 text-base leading-relaxed mb-8">
-              Vi vet att du har hört det förr, men regelbundna besök hos tandvården är viktigt för 
-              att dina tänder ska må bra. Välkommen till oss och upplev en trevligare tandläkare.
+              Vi ved, at du har hørt det før, men regelmæssige besøg hos tandlægen er vigtigt for, 
+              at dine tænder skal have det godt. Velkommen til os og oplev en venligere tandlæge. Som dansk patient dækker vi din rejse over Øresund!
             </p>
             <div className="flex gap-4">
               <Link
                 href="/boka-tid"
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition-colors"
               >
-                BOKA ONLINE
+                BOOK ONLINE
               </Link>
               <Link
                 href="/kontakt"
                 className="text-gray-700 hover:text-orange-600 px-6 py-3 font-medium transition-colors"
               >
-                RING OSS
+                RING TIL OS
               </Link>
             </div>
           </div>

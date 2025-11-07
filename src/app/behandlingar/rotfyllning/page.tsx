@@ -9,20 +9,20 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "När behövs en rotfyllning?",
-    answer: "Rotfyllning behövs när tandnerven är inflammerad eller infekterad, ofta på grund av djup karies, sprickor i tanden eller trauma. Symtom kan vara stark tandvärk, känslighet och svullnad."
+    question: "Hvornår er der behov for rodfyldning?",
+    answer: "Rodfyldning er nødvendig, når tandnerven er betændt eller inficeret, ofte på grund af dyb karies, revner i tanden eller traumer. Symptomer kan være kraftig tandpine, følsomhed og hævelse. Som dansk patient sparer du op til 60% sammenlignet med København!"
   },
   {
-    question: "Gör rotfyllning ont?",
-    answer: "Rotfyllning utförs under lokalbedövning så du känner ingen smärta under behandlingen. Efter behandlingen kan det vara lite ömt, men detta försvinner inom några dagar."
+    question: "Gør rodfyldning ondt?",
+    answer: "Rodfyldning udføres under lokalbedøvelse, så du føler ingen smerte under behandlingen. Efter behandlingen kan det være lidt ømt, men dette forsvinder inden for nogle dage."
   },
   {
-    question: "Hur länge tar en rotfyllning?",
-    answer: "En rotfyllning tar vanligtvis 1-2 timmar och kan kräva 1-3 besök beroende på komplexiteten. Vi säkerställer att behandlingen görs noggrant för bästa resultat."
+    question: "Hvor lang tid tager en rodfyldning?",
+    answer: "En rodfyldning tager normalt 1-2 timer og kan kræve 1-3 besøg afhængigt af kompleksiteten. Vi sikrer, at behandlingen udføres omhyggeligt for det bedste resultat."
   },
   {
-    question: "Kan tanden räddas med rotfyllning?",
-    answer: "Ja, rotfyllning räddar tanden i de flesta fall och kan hålla livet ut med rätt vård. Alternativet är ofta att dra ut tanden, så rotfyllning är en värdefull behandling."
+    question: "Kan tanden reddes med rodfyldning?",
+    answer: "Ja, rodfyldning redder tanden i de fleste tilfælde og kan holde livet ud med korrekt pleje. Alternativet er ofte at trække tanden ud, så rodfyldning er en værdifuld behandling."
   }
 ]
 
@@ -44,10 +44,10 @@ export default function RotfyllningPage() {
             {/* Left side - Content */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                Rotfyllning
+                Rodfyldning
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Rädda din tand med professionell rotfyllning. Vi behandlar inflammerad eller infekterad tandnerv med moderna tekniker för att bevara din naturliga tand.
+                Red din tand med professionel rodfyldning. Vi behandler betændte eller inficerede tandnerver med moderne teknikker for at bevare din naturlige tand. Som dansk patient sparer du op til 60% sammenlignet med København, og vi dækker din rejse over Øresund!
               </p>
               
               <div className="mt-8 space-y-4">
@@ -103,7 +103,7 @@ export default function RotfyllningPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

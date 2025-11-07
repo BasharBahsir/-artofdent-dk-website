@@ -3,23 +3,22 @@ import { StarIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
 const footerSections = {
-  populäraBehandlingar: [
-    { name: 'Akut tandvård', href: '/behandlingar/akut-tandvard' },
-    { name: 'Tandimplantat', href: '/behandlingar/tandimplantat' },
-    { name: 'Estetisk tandvård', href: '/behandlingar/estetisk-tandvard' },
-    { name: 'Barn tandvård', href: '/behandlingar/barnvard' },
+  populæreBehandlinger: [
+    { name: 'Akut tandpleje', href: '/behandlingar/akut-tandvard' },
+    { name: 'Tandimplantater', href: '/behandlingar/tandimplantat' },
+    { name: 'Æstetisk tandpleje', href: '/behandlingar/estetisk-tandvard' },
+    { name: 'Børnetandpleje', href: '/behandlingar/barnvard' },
   ],
-  snabbLänkar: [
-    { name: 'Boka tid online', href: '/boka-tid' },
-    { name: 'Tandvårdsbidrag', href: '/behandlingar/tandvard-bidrag' },
-    { name: 'Kunskapbanken', href: '/kunskapbanken' },
-    { name: 'Vårt team', href: '/om-oss#team' },
+  hurtigeLinks: [
+    { name: 'Book tid online', href: '/boka-tid' },
+    { name: 'Vidensbank', href: '/kunskapbanken' },
+    { name: 'Vores team', href: '/om-oss#team' },
   ],
   information: [
     { name: 'Om Artofdent', href: '/om-oss' },
-    { name: 'Kontakt & öppettider', href: '/kontakt' },
-    { name: 'Våra kliniker', href: '/kontakt#kliniker' },
-    { name: 'Dataskyddspolicy', href: '/dataskyddspolicy' },
+    { name: 'Kontakt & åbningstider', href: '/kontakt' },
+    { name: 'Vores klinikker', href: '/kontakt#kliniker' },
+    { name: 'Databeskyttelsespolitik', href: '/dataskyddspolicy' },
   ]
 }
 
@@ -33,9 +32,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Populära behandlingar */}
           <div>
-            <h3 className="text-lg font-medium text-white mb-6">Populära behandlingar</h3>
+            <h3 className="text-lg font-medium text-white mb-6">Populære behandlinger</h3>
             <ul className="space-y-3">
-              {footerSections.populäraBehandlingar.map((item) => (
+              {footerSections.populæreBehandlinger.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-gray-300 hover:text-white transition-colors text-sm">
                     {item.name}
@@ -47,9 +46,9 @@ export default function Footer() {
 
           {/* Snabblänkar */}
           <div>
-            <h3 className="text-lg font-medium text-white mb-6">Snabblänkar</h3>
+            <h3 className="text-lg font-medium text-white mb-6">Hurtige links</h3>
             <ul className="space-y-3">
-              {footerSections.snabbLänkar.map((item) => (
+              {footerSections.hurtigeLinks.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-gray-300 hover:text-white transition-colors text-sm">
                     {item.name}
@@ -102,7 +101,7 @@ export default function Footer() {
             </a>
             
             <p className="text-gray-400 text-sm">
-              Baserat på Google recensioner
+              Baseret på Google anmeldelser
             </p>
 
             {/* Muntra Rating */}
@@ -134,7 +133,7 @@ export default function Footer() {
               </div>
               
               <p className="text-gray-400 text-sm">
-                Baserat på Muntra recensioner
+                Baseret på Muntra anmeldelser
               </p>
             </a>
           </div>
@@ -173,7 +172,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
               <span>© Art of Dent 2025</span>
               <Link href="/dataskyddspolicy" className="hover:text-white">
-                Dataskyddspolicy
+                Databeskyttelsespolitik
               </Link>
             </div>
           </div>

@@ -9,20 +9,20 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Vilka behandlingar ingår i estetisk tandvård?",
-    answer: "Estetisk tandvård omfattar tandblekning, skalfasader, Invisalign, tandreglering, tandkronor, och estetiska fyllningar. Vi hjälper dig välja rätt behandling för ditt drömleende."
+    question: "Hvilke behandlinger indgår i æstetisk tandpleje?",
+    answer: "Æstetisk tandpleje omfatter tandblekning, facader, Invisalign, tandregulering, tandkroner og æstetiske fyldninger. Vi hjælper dig med at vælge den rette behandling for dit drømmesmil. Som dansk patient sparer du betydeligt sammenlignet med København!"
   },
   {
-    question: "Hur länge håller resultatet?",
-    answer: "Resultatet varierar beroende på behandling. Tandblekning håller 1-3 år, skalfasader kan hålla 10-15 år, och Invisalign ger permanenta resultat med rätt skötsel och retention."
+    question: "Hvor længe holder resultatet?",
+    answer: "Resultatet varierer afhængigt af behandlingen. Tandblekning holder 1-3 år, facader kan holde 10-15 år, og Invisalign giver permanente resultater med korrekt pleje og retention."
   },
   {
-    question: "Är estetisk tandvård säker?",
-    answer: "Ja, alla våra estetiska behandlingar är säkra och beprövade. Vi använder moderna tekniker och material av högsta kvalitet för bästa resultat."
+    question: "Er æstetisk tandpleje sikker?",
+    answer: "Ja, alle vores æstetiske behandlinger er sikre og afprøvede. Vi bruger moderne teknikker og materialer af højeste kvalitet for de bedste resultater."
   },
   {
-    question: "Vad kostar estetisk tandvård?",
-    answer: "Kostnaden varierar beroende på behandling. Vi ger alltid en kostnadskalkyl innan behandling. Kontakta oss för en kostnadsfri konsultation."
+    question: "Hvad koster æstetisk tandpleje?",
+    answer: "Omkostningerne varierer afhængigt af behandlingen. Vi giver altid et omkostningsoverslag før behandling. Kontakt os for en gratis konsultation. Danske patienter får betydelige besparelser sammenlignet med København!"
   }
 ]
 
@@ -44,24 +44,24 @@ export default function EstetiskTandvardPage() {
             {/* Left side - Content */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                Estetisk Tandvård
+                Æstetisk Tandpleje
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Skapa ditt drömleende med vår estetiska tandvård. Vi erbjuder moderna behandlingar som tandblekning, skalfasader och Invisalign för ett vackrare och mer självsäkert leende.
+                Skab dit drømmesmil med vores æstetiske tandpleje. Vi tilbyder moderne behandlinger som tandblekning, facader og Invisalign for et smukkere og mere selvsikkert smil. Som dansk patient får du betydelige besparelser sammenlignet med København, og vi dækker din rejse over Øresund!
               </p>
               
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Tandblekning för vitare tänder</span>
+                  <span className="text-neutral-600">Tandblekning for hvidere tænder</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Skalfasader och kronor</span>
+                  <span className="text-neutral-600">Facader og kroner</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Invisalign och tandreglering</span>
+                  <span className="text-neutral-600">Invisalign og tandregulering</span>
                 </div>
               </div>
 
@@ -70,13 +70,13 @@ export default function EstetiskTandvardPage() {
                   href="/boka-tid"
                   className="rounded-full bg-primary-700 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-primary-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700 transition-all hover:shadow-xl"
                 >
-                  BOKA ONLINE
+                  BOOK ONLINE
                 </Link>
                 <Link
                   href="/kontakt"
                   className="rounded-full border-2 border-secondary-400 bg-white px-8 py-3 text-base font-semibold text-secondary-400 shadow-lg hover:bg-secondary-400 hover:text-white hover:border-secondary-500 transition-all hover:shadow-xl"
                 >
-                  KONTAKTA OSS
+                  KONTAKT OS
                 </Link>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function EstetiskTandvardPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

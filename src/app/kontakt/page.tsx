@@ -18,16 +18,16 @@ const clinics = [
     name: 'Artofdent Malmö',
     address: 'Hantverkaregatan 6D',
     postal: '211 55 Malmö',
-    phone: '040-12 11 08',
+    phone: '+46 40-12 11 08',
     email: 'Artofdent.klinik@gmail.com',
     hours: {
-      monday: 'Måndag: 08:00 - 20:00',
-      tuesday: 'Tisdag: 08:00 - 16:30',
+      monday: 'Mandag: 08:00 - 20:00',
+      tuesday: 'Tirsdag: 08:00 - 16:30',
       wednesday: 'Onsdag: 08:00 - 18:00',
       thursday: 'Torsdag: 08:00 - 17:00',
       friday: 'Fredag: 08:00 - 15:00',
-      saturday: 'Lördag: Stängt',
-      sunday: 'Söndag: Stängt'
+      saturday: 'Lørdag: Lukket',
+      sunday: 'Søndag: Lukket'
     },
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2255.433133598585!2d12.99021067767439!3d55.60150497303895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3e5c7993379%3A0x843f4c683c6a2e5!2sHantverkaregatan%206D%2C%20211%2055%20Malm%C3%B6!5e0!3m2!1sen!2sse!4v1678886452647!5m2!1sen!2sse'
   },
@@ -35,16 +35,16 @@ const clinics = [
     name: 'ABC Tandklinikgruppen',
     address: 'Södra Förstadsgatan 31 (IDOFFCENTRUM)',
     postal: '211 43 Malmö',
-    phone: '040-18 44 00',
+    phone: '+46 40-18 44 00',
     email: 'info@abctandklinikgruppen.se',
     hours: {
-      monday: 'Måndag: 08:00 - 16:00',
-      tuesday: 'Tisdag: 08:00 - 16:00',
+      monday: 'Mandag: 08:00 - 16:00',
+      tuesday: 'Tirsdag: 08:00 - 16:00',
       wednesday: 'Onsdag: 08:00 - 16:00',
       thursday: 'Torsdag: 08:00 - 16:00',
       friday: 'Fredag: 08:00 - 14:00',
-      saturday: 'Lördag: Stängt',
-      sunday: 'Söndag: Stängt'
+      saturday: 'Lørdag: Lukket',
+      sunday: 'Søndag: Lukket'
     },
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2255.516999295195!2d12.99616567767433!3d55.59995197303867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3e6c0c0f9c3%3A0x1c0b1c0b1c0b1c0b!2sS%C3%B6dra%20F%C3%B6rstadsgatan%2031%2C%20211%2043%20Malm%C3%B6!5e0!3m2!1sen!2sse!4v1678886514789!5m2!1sen!2sse'
   }
@@ -52,28 +52,28 @@ const clinics = [
 
 const faqs = [
   {
-    question: 'Hur bokar jag tid?',
-    answer: 'Du kan boka tid online via vår bokningssida, ringa Artofdent på 040-12 11 08 eller ABC Tandklinikgruppen på 040-18 44 00, eller skicka ett email. Vi erbjuder flexibla tider och försöker alltid hitta en tid som passar dig.'
+    question: 'Hvordan booker jeg tid?',
+    answer: 'Du kan booke tid online via vores bookingside, ringe til Artofdent på +46 40-12 11 08 eller ABC Tandklinikgruppen på +46 40-18 44 00, eller sende en email. Vi tilbyder fleksible tider og forsøger altid at finde en tid, der passer dig. Som dansk patient dækker vi dine rejseomkostninger over Øresund!'
   },
   {
-    question: 'Vad kostar en tandundersökning?',
-    answer: 'En grundlig tandundersökning kostar från 450 kr. Detta inkluderar klinisk undersökning, röntgen och en behandlingsplan. Vi informerar alltid om kostnader innan behandling.'
+    question: 'Hvad koster en tandundersøgelse?',
+    answer: 'En grundig tandundersøgelse koster fra 450 kr - betydeligt billigere end i København! Dette inkluderer klinisk undersøgelse, røntgen og en behandlingsplan. Vi informerer altid om omkostninger før behandling.'
   },
   {
-    question: 'Tar ni emot akuta patienter?',
-    answer: 'Ja, vi tar emot akuta patienter samma dag när det är möjligt. Ring Artofdent på 040-12 11 08 eller ABC Tandklinikgruppen på 040-18 44 00 så snart som möjligt så hjälper vi dig omgående.'
+    question: 'Tager I imod akutte patienter?',
+    answer: 'Ja, vi tager imod akutte patienter samme dag når det er muligt. Ring til Artofdent på +46 40-12 11 08 eller ABC Tandklinikgruppen på +46 40-18 44 00 så hurtigt som muligt, så hjælper vi dig med det samme.'
   },
   {
-    question: 'Vilka försäkringar accepterar ni?',
-    answer: 'Vi accepterar alla svenska tandvårdsförsäkringar och hjälper dig gärna med din försäkring. Ta med ditt försäkringskort till besöket.'
+    question: 'Hvordan fungerer betaling for danske patienter?',
+    answer: 'Som dansk patient betaler du direkte for behandlingen, men får betydelige besparelser sammenlignet med København! Vi hjælper gerne med dokumentation til eventuel refusion fra dansk forsikring. Vigtigst af alt - vi dækker din rejse over Øresund!'
   },
   {
-    question: 'Vilka betalningsmetoder accepterar ni?',
-    answer: 'Vi accepterar kontokort (Visa, Mastercard), Swish, faktura efter överenskommelse och delbetalning via externa partners.'
+    question: 'Hvilke betalingsmetoder accepterer I?',
+    answer: 'Vi accepterer betalingskort (Visa, Mastercard), Swish, faktura efter aftale og delbetaling via eksterne partnere. Danske kort accepteres naturligvis også.'
   },
   {
-    question: 'Vad ska jag tänka på inför mitt besök?',
-    answer: 'Kom 10 minuter före bokad tid, ta med giltig ID-handling och försäkringskort. Informera oss om mediciner du tar. Avboka senast 24 timmar innan för att undvika avgift.'
+    question: 'Hvad skal jeg tænke på før mit besøg?',
+    answer: 'Kom 10 minutter før booket tid, tag gyldig ID og forsikringskort med. Informer os om medicin du tager. Afbestil senest 24 timer før for at undgå gebyr. Husk - vi betaler din rejse over Øresund!'
   }
 ]
 
@@ -90,20 +90,20 @@ export default function KontaktPage() {
               Kontakt & Praktisk Information
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Allt du behöver veta för ditt besök hos oss. Kontaktinformation, öppettider, betalning, försäkringar och vanliga frågor.
+              Alt du behøver at vide for dit besøg hos os. Kontaktinformation, åbningstider, betaling, forsikringer og ofte stillede spørgsmål. Vi dækker din rejse over Øresund!
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
               <a
-                href="tel:040-12 11 08"
+                href="tel:+46401211008"
                 className="rounded-lg sm:rounded-full bg-accent-400 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white shadow-sm hover:bg-accent-500 transition-all w-full sm:w-auto text-center"
               >
-                Artofdent: 040-12 11 08
+                Artofdent: +46 40-12 11 08
               </a>
               <Link
                 href="/boka-tid"
                 className="rounded-lg sm:rounded-full border-2 border-primary-600 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-primary-600 hover:bg-primary-600 hover:text-white transition-all w-full sm:w-auto text-center"
               >
-                Boka tid online
+                Book tid online
               </Link>
             </div>
           </div>
@@ -121,14 +121,14 @@ export default function KontaktPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-50">
                   <CreditCardIcon className="h-6 w-6 text-primary-600" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">Betalning</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Betaling</h2>
               </div>
               <div className="space-y-4">
-                <p className="text-gray-700">Vi accepterar följande betalningsmetoder:</p>
+                <p className="text-gray-700">Vi accepterer følgende betalingsmetoder:</p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Kontokort (Visa, Mastercard)
+                    Betalingskort (Visa, Mastercard)
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
@@ -136,53 +136,55 @@ export default function KontaktPage() {
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Faktura (efter överenskommelse)
+                    Faktura (efter aftale)
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Delbetalning via externa partners
+                    Delbetaling via eksterne partnere
                   </li>
                 </ul>
               </div>
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600">
-                  Betalning sker direkt efter besöket. Vi skickar kvitto via email.
+                  Betaling sker direkte efter besøget. Vi sender kvittering via email.
                 </p>
               </div>
             </div>
 
-            {/* Insurance */}
-            <div className="rounded-2xl bg-white p-8 shadow-sm border border-gray-200">
+            {/* Øresund Travel Offer */}
+            <div className="rounded-2xl bg-gradient-to-br from-blue-50 to-green-50 p-8 shadow-sm border border-blue-200">
               <div className="flex items-center gap-x-3 mb-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-50">
-                  <ShieldCheckIcon className="h-6 w-6 text-primary-600" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                  <svg className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0V8.25a1.5 1.5 0 013 0v10.5zM12 18.75a1.5 1.5 0 01-3 0V8.25a1.5 1.5 0 013 0v10.5zM15.75 18.75a1.5 1.5 0 01-3 0V8.25a1.5 1.5 0 013 0v10.5zM19.5 10.5h-15M19.5 13.5h-15" />
+                  </svg>
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">Försäkring</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Gratis Øresund Transport</h2>
               </div>
               <div className="space-y-4">
-                <p className="text-gray-700">Vi samarbetar med alla större försäkringsbolag:</p>
+                <p className="text-gray-700 font-medium">Vi betaler din rejse over Øresund!</p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Folksam
+                    Togbillet København-Malmö
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Länsförsäkringar
+                    Øresundsbro bilafgift
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    If
+                    Busbillet over broen
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Trygg-Hansa
+                    Betydelige besparelser på behandling
                   </li>
                 </ul>
               </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-600">
-                  Ta med ditt försäkringskort till besöket så hjälper vi dig med din försäkring.
+              <div className="mt-6 pt-6 border-t border-blue-200">
+                <p className="text-sm text-blue-700 font-medium">
+                  Gem dine rejsekvitteringer - vi refunderer omkostningerne ved dit besøg!
                 </p>
               </div>
             </div>
@@ -193,32 +195,32 @@ export default function KontaktPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-50">
                   <DocumentTextIcon className="h-6 w-6 text-primary-600" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">Inför ditt besök</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Før dit besøg</h2>
               </div>
               <div className="space-y-4">
-                <p className="text-gray-700">Tänk på följande:</p>
+                <p className="text-gray-700">Tænk på følgende:</p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Kom 10 minuter före bokad tid
+                    Kom 10 minutter før booket tid
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Ta med giltig ID-handling
+                    Tag gyldig ID med
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Ta med försäkringskort (om tillämpligt)
+                    Tag forsikringskort med (hvis relevant)
                   </li>
                   <li className="flex items-center gap-x-2">
                     <span className="text-green-500">✓</span>
-                    Informera om mediciner du tar
+                    Informer om medicin du tager
                   </li>
                 </ul>
               </div>
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600">
-                  Kan du inte komma? Avboka senast 24 timmar innan för att undvika avgift.
+                  Kan du ikke komme? Afbestil senest 24 timer før for at undgå gebyr.
                 </p>
               </div>
             </div>
@@ -245,7 +247,7 @@ export default function KontaktPage() {
                         <MapPinIcon className="h-6 w-6 text-primary-600" />
                       </div>
                       <div>
-                        <h3 className="text-base font-semibold text-dental-900">Adress</h3>
+                        <h3 className="text-base font-semibold text-dental-900">Adresse</h3>
                         <p className="mt-1 text-dental-600">{clinic.address}</p>
                         <p className="text-dental-600">{clinic.postal}</p>
                       </div>
@@ -283,7 +285,7 @@ export default function KontaktPage() {
                         <ClockIcon className="h-6 w-6 text-primary-600" />
                       </div>
                       <div>
-                        <h3 className="text-base font-semibold text-gray-900">Öppettider</h3>
+                        <h3 className="text-base font-semibold text-gray-900">Åbningstider</h3>
                         <div className="mt-1 space-y-1 text-gray-600">
                           <p>{clinic.hours.monday}</p>
                           <p>{clinic.hours.tuesday}</p>
@@ -302,7 +304,7 @@ export default function KontaktPage() {
                         href="/boka-tid"
                         className="inline-flex items-center rounded-full bg-accent-400 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 transition-all"
                       >
-                        Boka tid på {clinic.name}
+                        Book tid på {clinic.name}
                       </Link>
                     </div>
                   </div>
@@ -319,7 +321,7 @@ export default function KontaktPage() {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title={`Karta över ${clinic.name}`}
+                      title={`Kort over ${clinic.name}`}
                     />
                   </div>
                 </div>
@@ -337,10 +339,10 @@ export default function KontaktPage() {
               <QuestionMarkCircleIcon className="h-8 w-8 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Vanliga frågor
+              Ofte stillede spørgsmål
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Här hittar du svar på de vanligaste frågorna om våra tjänster
+              Her finder du svar på de mest almindelige spørgsmål om vores tjenester
             </p>
           </div>
 
@@ -367,25 +369,25 @@ export default function KontaktPage() {
               <HeartIcon className="h-12 w-12 text-white" />
               <div>
                 <h2 className="text-2xl font-bold text-white">
-                  Akut tandvård
+                  Akut tandpleje
                 </h2>
                 <p className="text-primary-100">
-                  Vi finns här för dig när du behöver oss som mest
+                  Vi er her for dig, når du har mest brug for os
                 </p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:040-12 11 08"
+                href="tel:+46401211008"
                 className="rounded-full bg-accent-400 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 transition-all text-center"
               >
-                Artofdent: 040-12 11 08
+                Artofdent: +46 40-12 11 08
               </a>
               <a
-                href="tel:040-18 44 00"
+                href="tel:+46401844000"
                 className="rounded-full bg-accent-400 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 transition-all text-center"
               >
-                ABC: 040-18 44 00
+                ABC: +46 40-18 44 00
               </a>
             </div>
           </div>

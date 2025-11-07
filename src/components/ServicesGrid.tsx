@@ -7,38 +7,38 @@ import SearchModal from './SearchModal'
 
 const services = [
   {
-    name: 'Boka tid',
-    description: 'Snabb och enkel bokning online eller via telefon',
+    name: 'Book tid',
+    description: 'Hurtig og nem booking online eller via telefon',
     icon: '/images/icons/appointment.png',
     href: '/boka-tid',
   },
   {
-    name: 'Hitta klinik',
-    description: 'Lokalisera närmaste klinik med vägbeskrivning',
+    name: 'Find klinik',
+    description: 'Lokaliser nærmeste klinik med vejbeskrivelse',
     icon: '/images/icons/dental-checkup.png', // Assuming this is the right icon
     href: '/kontakt',
   },
   {
-    name: 'Barn tandvård',
-    description: 'Specialiserad och trygg tandvård för barn',
+    name: 'Børnetandpleje',
+    description: 'Specialiseret og tryg tandpleje for børn',
     icon: '/images/icons/happy-tooth.png',
     href: '/behandlingar/barnvard',
   },
   {
-    name: 'Akut tandvård',
-    description: 'Akutmottagning för brådskande tandproblem',
+    name: 'Akut tandpleje',
+    description: 'Akutmodtagelse for hastende tandproblemer',
     icon: '/images/icons/akut.png',
     href: '/behandlingar/akut-tandvard',
   },
   {
-    name: 'Tandimplantat',
-    description: 'Moderna implantat för ersättning av förlorade tänder',
+    name: 'Tandimplantater',
+    description: 'Moderne implantater til erstatning af mistede tænder',
     icon: '/images/icons/dental-implant.png',
     href: '/behandlingar/tandimplantat',
   },
   {
-    name: 'Estetisk tandvård',
-    description: 'Tandblekning och kosmetiska behandlingar',
+    name: 'Æstetisk tandpleje',
+    description: 'Tandblekning og kosmetiske behandlinger',
     icon: '/images/icons/astetic_tandvard.png',
     href: '/behandlingar/estetisk-tandvard',
   }
@@ -65,11 +65,11 @@ export default function ServicesGrid() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-dental-900 sm:text-4xl">
-            Hur kan vi hjälpa dig?
+            Hvordan kan vi hjælpe dig?
           </h2>
           <p className="mt-6 text-lg leading-8 text-dental-600">
-            Vi erbjuder ett brett utbud av tandvårdstjänster med fokus på kvalitet, 
-            trygghet och patientens bästa.
+            Vi tilbyder et bredt udvalg af tandplejetjenester med fokus på kvalitet, 
+            tryghed og patientens bedste. Som dansk patient får du betydelige besparelser sammenlignet med København!
           </p>
         </div>
         
@@ -91,7 +91,7 @@ export default function ServicesGrid() {
                   <p className="flex-auto">{service.description}</p>
                   <p className="mt-6">
                     <span className="text-sm font-semibold text-primary-600 group-hover:text-primary-500">
-                      Läs mer <span aria-hidden="true">→</span>
+                      Læs mere <span aria-hidden="true">→</span>
                     </span>
                   </p>
                 </dd>
@@ -105,7 +105,7 @@ export default function ServicesGrid() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Jag letar efter..."
+              placeholder="Jeg leder efter..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={handleKeyPress}
@@ -115,11 +115,11 @@ export default function ServicesGrid() {
               onClick={handleSearch}
               className="absolute right-2 top-2 rounded-full bg-accent-400 px-6 py-2 text-sm font-semibold text-white hover:bg-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-400 focus:ring-offset-2 transition-colors"
             >
-              Sök
+              Søg
             </button>
           </div>
           <p className="mt-4 text-sm text-dental-500">
-            Du kan söka på allt från{' '}
+            Du kan søge på alt fra{' '}
             <button 
               onClick={() => {
                 setSearchQuery('tandsten')
@@ -129,15 +129,15 @@ export default function ServicesGrid() {
             >
               &ldquo;tandsten&rdquo;
             </button>{' '}
-            till{' '}
+            til{' '}
             <button 
               onClick={() => {
-                setSearchQuery('tandvårdsrädsla')
+                setSearchQuery('tandlægeangst')
                 setSearchModalOpen(true)
               }}
               className="font-medium text-primary-600 hover:text-primary-500 underline"
             >
-              &ldquo;tandvårdsrädsla&rdquo;
+              &ldquo;tandlægeangst&rdquo;
             </button>
           </p>
         </div>

@@ -78,7 +78,7 @@ export default function BarntandvardMalmoPage() {
           <div className="bg-yellow-50 rounded-2xl p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Relaterade ämnen</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/behandlingar/barnvard" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Barn tandvård</Link>
+              <Link href="/behandlingar/barnvard" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Barntandvård</Link>
               <Link href="/kunskapbanken/karies" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Karies</Link>
               <Link href="/kunskapbanken/munhygien-malmo-expertrad-hemma" className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">Munhygien</Link>
             </div>

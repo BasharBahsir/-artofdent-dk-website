@@ -1,7 +1,8 @@
 {
-  "name": "artofdent-website",
+  "name": "artofdent-dk-website",
   "version": "0.1.0",
   "private": true,
+  "description": "Artofdent Danish website targeting Copenhagen patients with Øresund Bridge cost coverage",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

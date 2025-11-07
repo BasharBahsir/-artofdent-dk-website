@@ -8,12 +8,12 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Hur mycket kommer mitt besök att kosta?",
-    answer: "Kostnaden för ditt besök beror på vilka behandlingar som behövs. Ditt tandvårdsbidrag dras automatiskt av från den totala kostnaden. Kontakta oss för en kostnadsfri konsultation där vi kan ge dig en uppskattning."
+    question: "Hvor meget kommer mit besøg til at koste?",
+    answer: "Omkostningerne for dit besøg afhænger af, hvilke behandlinger der er nødvendige. Dit tandplejetilskud trækkes automatisk fra den samlede omkostning. Kontakt os for en gratis konsultation, hvor vi kan give dig et overslag. Som dansk patient sparer du desuden betydeligt sammenlignet med København!"
   },
   {
-    question: "Täcker mitt tandvårdsbidrag alla mina behandlingar?",
-    answer: "Tandvårdsbidraget täcker grundläggande tandvård men inte estetiska behandlingar. Bidraget används automatiskt när du besöker oss och dras av från din totala kostnad. Vi hjälper dig att maximera ditt bidrag."
+    question: "Dækker mit tandplejetilskud alle mine behandlinger?",
+    answer: "Tandplejetilskuddet dækker grundlæggende tandpleje, men ikke æstetiske behandlinger. Tilskuddet bruges automatisk, når du besøger os, og trækkes fra din samlede omkostning. Vi hjælper dig med at maksimere dit tilskud."
   }
 ]
 
@@ -38,16 +38,16 @@ export default function TandvardBidragPage() {
 
     if (age < 20) {
       yearly = 0
-      message = 'Du har gratis tandvård! Passa på att boka ditt besök.'
+      message = 'Du har gratis tandpleje! Husk at booke dit besøg.'
     } else if (age >= 20 && age <= 23) {
       yearly = 600
-      message = 'Dags att gå till tandläkaren? Du kan ha upp till 1200 kr i ATB.'
+      message = 'Tid til at gå til tandlægen? Du kan have op til 1200 kr i ATB.'
     } else if (age >= 24 && age <= 64) {
       yearly = 300
-      message = 'Dags att gå till tandläkaren? Du kan ha upp till 600 kr i ATB.'
+      message = 'Tid til at gå til tandlægen? Du kan have op til 600 kr i ATB.'
     } else if (age >= 65) {
       yearly = 600
-      message = 'Dags att gå till tandläkaren? Du kan ha upp till 1200 kr i ATB.'
+      message = 'Tid til at gå til tandlægen? Du kan have op til 1200 kr i ATB.'
     }
 
     const total = yearly * 2 // Can save for 2 years

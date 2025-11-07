@@ -9,20 +9,20 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Hur länge håller tandblekningen?",
-    answer: "Resultatet från professionell tandblekning håller vanligtvis 1-3 år, beroende på dina vanor. Undvik färgande drycker som kaffe, te och rödvin för längre hållbarhet."
+    question: "Hvor længe holder tandblekningen?",
+    answer: "Resultatet fra professionel tandblekning holder normalt 1-3 år, afhængigt af dine vaner. Undgå farvende drikke som kaffe, te og rødvin for længere holdbarhed. Som dansk patient sparer du op til 50% sammenlignet med København!"
   },
   {
-    question: "Gör tandblekning ont?",
-    answer: "Tandblekning kan orsaka tillfällig känslighet, men detta är normalt och försvinner inom några dagar. Vi använder skonsamma metoder för att minimera obehag."
+    question: "Gør tandblekning ondt?",
+    answer: "Tandblekning kan forårsage midlertidig følsomhed, men dette er normalt og forsvinder inden for nogle dage. Vi bruger skånsomme metoder for at minimere ubehag."
   },
   {
-    question: "Kan alla tänder blekas?",
-    answer: "De flesta naturliga tänder kan blekas, men fyllningar, kronor och broar påverkas inte av blekning. Vi bedömer dina tänder innan behandling för bästa resultat."
+    question: "Kan alle tænder bleges?",
+    answer: "De fleste naturlige tænder kan bleges, men fyldninger, kroner og broer påvirkes ikke af blekning. Vi vurderer dine tænder før behandling for det bedste resultat."
   },
   {
-    question: "Hur många nyanser ljusare blir tänderna?",
-    answer: "Professionell tandblekning kan göra tänderna 3-8 nyanser ljusare. Resultatet varierar beroende på utgångsläget och typ av missfärgning."
+    question: "Hvor mange nuancer lysere bliver tænderne?",
+    answer: "Professionel tandblekning kan gøre tænderne 3-8 nuancer lysere. Resultatet varierer afhængigt af udgangspunktet og typen af misfarvning."
   }
 ]
 
@@ -47,7 +47,7 @@ export default function TandblekningPage() {
                 Tandblekning
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Få vitare och ljusare tänder med vår professionella tandblekning. Vi erbjuder säkra och effektiva metoder som ger långvariga resultat under kontrollerade former.
+                Få hvidere og lysere tænder med vores professionelle tandblekning. Vi tilbyder sikre og effektive metoder, der giver langvarige resultater under kontrollerede forhold. Som dansk patient sparer du op til 50% sammenlignet med København, og vi dækker din rejse over Øresund!
               </p>
               
               <div className="mt-8 space-y-4">
@@ -103,7 +103,7 @@ export default function TandblekningPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

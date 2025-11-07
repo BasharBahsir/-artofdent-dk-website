@@ -9,20 +9,20 @@ import { useState, useRef } from 'react'
 
 const faqs = [
   {
-    question: "Hur lång tid tar en tandimplantatbehandling?",
-    answer: "Hela processen tar vanligtvis 3-6 månader från första konsultationen till färdig krona. Detta inkluderar läkning och osseointegration där implantatet växer samman med käkbenet."
+    question: "Hvor lang tid tager en tandimplantatbehandling?",
+    answer: "Hele processen tager normalt 3-6 måneder fra første konsultation til færdig krone. Dette inkluderer heling og osseointegration, hvor implantatet vokser sammen med kæbebenet. Som dansk patient sparer du betydeligt sammenlignet med København - og vi dækker din rejse over Øresund."
   },
   {
-    question: "Gör det ont att sätta in tandimplantat?",
-    answer: "Behandlingen utförs under lokalbedövning så du känner ingen smärta under ingreppet. Efter behandlingen kan det vara lite ömt, men detta är normalt och går över inom några dagar."
+    question: "Gør det ondt at få indsat tandimplantater?",
+    answer: "Behandlingen udføres under lokalbedøvelse, så du føler ingen smerte under indgrebet. Efter behandlingen kan det være lidt ømt, men dette er normalt og går over inden for nogle dage."
   },
   {
-    question: "Vad kostar tandimplantat?",
-    answer: "Kostnaden varierar beroende på antal implantat och behandlingens komplexitet. Vi ger alltid en kostnadskalkyl innan behandling påbörjas. Kontakta oss för en kostnadsfri konsultation."
+    question: "Hvad koster tandimplantater?",
+    answer: "Omkostningerne varierer afhængigt af antal implantater og behandlingens kompleksitet. Vi giver altid et omkostningsoverslag, før behandlingen påbegyndes. Kontakt os for en gratis konsultation. Danske patienter får betydelige besparelser sammenlignet med København!"
   },
   {
-    question: "Kan alla få tandimplantat?",
-    answer: "De flesta kan få tandimplantat, men tillräckligt med käkben krävs. Vi gör en noggrann bedömning vid konsultationen och kan vid behov göra benuppbyggnad först."
+    question: "Kan alle få tandimplantater?",
+    answer: "De fleste kan få tandimplantater, men der kræves tilstrækkeligt kæbeben. Vi laver en grundig vurdering ved konsultationen og kan om nødvendigt lave knogleopbygning først."
   }
 ]
 
@@ -62,36 +62,36 @@ export default function TandimplantatPage() {
                 Tandimplantat
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                En permanent lösning för ett leende som varar. Tandimplantat är den mest avancerade och hållbara metoden för att ersätta förlorade tänder. Vi använder den senaste tekniken för att säkerställa ett naturligt och funktionellt resultat.
+                En permanent løsning for et smil, der varer. Tandimplantater er den mest avancerede og holdbare metode til at erstatte mistede tænder. Vi bruger den nyeste teknologi for at sikre et naturligt og funktionelt resultat. Som danske patienter får I betydelige besparelser sammenlignet med København!
               </p>
               
               <div className="mt-8 space-y-4">
                 <div className="flex items-start gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full mt-2 flex-shrink-0" />
                   <div>
-                    <span className="font-semibold text-neutral-900">Naturligt utseende och känsla</span>
-                    <p className="text-neutral-600">Våra implantat ser ut och känns som dina egna tänder, vilket ger dig självförtroendet att le och äta som vanligt.</p>
+                    <span className="font-semibold text-neutral-900">Naturligt udseende og følelse</span>
+                    <p className="text-neutral-600">Vores implantater ser ud og føles som dine egne tænder, hvilket giver dig selvtilliden til at smile og spise som normalt.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full mt-2 flex-shrink-0" />
                   <div>
-                    <span className="font-semibold text-neutral-900">Långvarig hållbarhet</span>
-                    <p className="text-neutral-600">Med rätt skötsel kan tandimplantat hålla livet ut, vilket gör dem till en kostnadseffektiv lösning på lång sikt.</p>
+                    <span className="font-semibold text-neutral-900">Langvarig holdbarhed</span>
+                    <p className="text-neutral-600">Med korrekt pleje kan tandimplantater holde livet ud, hvilket gør dem til en omkostningseffektiv løsning på lang sigt.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full mt-2 flex-shrink-0" />
                   <div>
-                    <span className="font-semibold text-neutral-900">Bevarar käkbenet</span>
-                    <p className="text-neutral-600">Implantat stimulerar käkbenet och förhindrar benförlust, vilket hjälper till att bevara din ansiktsstruktur.</p>
+                    <span className="font-semibold text-neutral-900">Bevarer kæbebenet</span>
+                    <p className="text-neutral-600">Implantater stimulerer kæbebenet og forhindrer knogletab, hvilket hjælper med at bevare din ansigtsstruktur.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full mt-2 flex-shrink-0" />
                   <div>
-                    <span className="font-semibold text-neutral-900">Förbättrad tuggförmåga</span>
-                    <p className="text-neutral-600">Till skillnad från proteser sitter implantat fast, vilket gör att du kan äta dina favoritmat utan bekymmer.</p>
+                    <span className="font-semibold text-neutral-900">Forbedret tyggeevne</span>
+                    <p className="text-neutral-600">I modsætning til proteser sidder implantater fast, hvilket gør, at du kan spise din yndlingsmad uden bekymringer.</p>
                   </div>
                 </div>
               </div>
@@ -101,13 +101,13 @@ export default function TandimplantatPage() {
                   href="/boka-tid"
                   className="rounded-full bg-primary-700 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-primary-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700 transition-all hover:shadow-xl"
                 >
-                  BOKA ONLINE
+                  BOOK ONLINE
                 </Link>
                 <Link
                   href="/kontakt"
                   className="rounded-full border-2 border-secondary-400 bg-white px-8 py-3 text-base font-semibold text-secondary-400 shadow-lg hover:bg-secondary-400 hover:text-white hover:border-secondary-500 transition-all hover:shadow-xl"
                 >
-                  KONTAKTA OSS
+                  KONTAKT OS
                 </Link>
               </div>
             </div>
@@ -132,10 +132,10 @@ export default function TandimplantatPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-              Våra specialister
+              Vores specialister
             </h2>
             <p className="text-lg leading-8 text-gray-600">
-              Möt vårt team av erfarna specialister som arbetar med tandimplantat. Vi kombinerar expertis med personlig omsorg för att ge dig det bästa resultatet.
+              Mød vores team af erfarne specialister, som arbejder med tandimplantater. Vi kombinerer ekspertise med personlig omsorg for at give dig det bedste resultat.
             </p>
           </div>
           
@@ -189,10 +189,10 @@ export default function TandimplantatPage() {
             {/* Right side - Content */}
             <div className="lg:pl-8">
               <h3 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">
-                Moderna faciliteter
+                Moderne faciliteter
               </h3>
               <p className="text-lg leading-8 text-gray-600">
-                Vår klinik är utrustad med den senaste tekniken för att säkerställa säkra och framgångsrika implantatbehandlingar.
+                Vores klinik er udstyret med den nyeste teknologi for at sikre sikre og succesfulde implantatbehandlinger.
               </p>
             </div>
           </div>
@@ -206,7 +206,7 @@ export default function TandimplantatPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 
@@ -248,23 +248,23 @@ export default function TandimplantatPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Redo att få ditt nya leende?
+              Klar til at få dit nye smil?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-primary-100">
-              Boka en konsultation idag för att diskutera dina möjligheter med tandimplantat. Vi hjälper dig att få tillbaka ditt självförtroende.
+              Book en konsultation i dag for at diskutere dine muligheder med tandimplantater. Vi hjælper dig med at få din selvtillid tilbage.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/boka-tid"
                 className="rounded-full bg-white px-8 py-3 text-base font-semibold text-primary-600 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all"
               >
-                Boka konsultation
+                Book konsultation
               </Link>
               <Link
                 href="/kontakt"
                 className="rounded-full border-2 border-white px-8 py-3 text-base font-semibold text-white hover:bg-white hover:text-primary-600 transition-all"
               >
-                Kontakta oss
+                Kontakt os
               </Link>
             </div>
           </div>

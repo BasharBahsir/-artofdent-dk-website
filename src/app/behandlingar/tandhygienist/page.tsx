@@ -9,20 +9,20 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: "Hur ofta ska jag besöka tandhygienist?",
-    answer: "Vi rekommenderar att du besöker tandhygienist var 6:e månad för optimal munhälsa. Vid tandköttsproblem eller annan problematik kan det behövas tätare besök."
+    question: "Hvor ofte skal jeg besøge tandhygiejnist?",
+    answer: "Vi anbefaler, at du besøger tandhygiejnist hver 6. måned for optimal mundssundhed. Ved tandkødsproblemer eller andre problemer kan det være nødvendigt med hyppigere besøg. Som dansk patient sparer du betydeligt sammenlignet med København!"
   },
   {
-    question: "Vad ingår i ett besök hos tandhygienist?",
-    answer: "Ett besök inkluderar tandsten- och plackborttagning, polering av tänderna, fluorbehandling samt rådgivning om munhygien och rätt tandborstning."
+    question: "Hvad indgår i et besøg hos tandhygiejnist?",
+    answer: "Et besøg inkluderer tandsten- og plakfjernelse, polering af tænderne, fluorbehandling samt rådgivning om mundhygiejne og korrekt tandbørstning."
   },
   {
-    question: "Gör det ont att ta bort tandsten?",
-    answer: "Tandstensavlägsning kan kännas obehagligt men ska inte göra ont. Vi använder lokalbedövning vid behov för att du ska känna dig bekväm under behandlingen."
+    question: "Gør det ondt at fjerne tandsten?",
+    answer: "Tandstensfjernelse kan føles ubehageligt, men skal ikke gøre ondt. Vi bruger lokalbedøvelse efter behov, så du føler dig tryg under behandlingen."
   },
   {
-    question: "Kan jag äta direkt efter behandlingen?",
-    answer: "Du kan äta direkt efter behandlingen, men undvik starkt färgade drycker som kaffe, te och rödvin de första timmarna för bästa resultat."
+    question: "Kan jeg spise direkte efter behandlingen?",
+    answer: "Du kan spise direkte efter behandlingen, men undgå kraftigt farvede drikke som kaffe, te og rødvin de første timer for det bedste resultat."
   }
 ]
 
@@ -44,20 +44,20 @@ export default function TandhygienistPage() {
             {/* Left side - Content */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-                Tandhygienist
+                Tandhygiejnist
               </h1>
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Professionell tandvård för optimal munhälsa. Våra erfarna tandhygienister hjälper dig att hålla tänderna rena och friska med regelbundna kontroller och behandlingar.
+                Professionel tandpleje for optimal mundssundhed. Vores erfarne tandhygiejnister hjælper dig med at holde tænderne rene og sunde med regelmæssige kontroller og behandlinger. Som dansk patient sparer du op til 40% sammenlignet med København, og vi dækker din rejse over Øresund!
               </p>
               
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Tandsten- och plackborttagning</span>
+                  <span className="text-neutral-600">Tandsten- og plakfjernelse</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
-                  <span className="text-neutral-600">Polering och fluorbehandling</span>
+                  <span className="text-neutral-600">Polering og fluorbehandling</span>
                 </div>
                 <div className="flex items-center gap-x-3">
                   <div className="h-2 w-2 bg-secondary-400 rounded-full" />
@@ -103,7 +103,7 @@ export default function TandhygienistPage() {
             {/* Left side - Title */}
             <div>
               <h2 className="text-4xl font-normal text-gray-900 leading-tight">
-                Vanliga frågor
+                Ofte stillede spørgsmål
               </h2>
             </div>
 

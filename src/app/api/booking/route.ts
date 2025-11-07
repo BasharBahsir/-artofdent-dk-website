@@ -23,10 +23,15 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: ['booking.artofdent@gmail.com', 'basharbashir1st@gmail.com', 'artofdent.klinik@gmail.com'],
-      subject: `Ny bokningsförfrågan - ${clinicName}`,
+      to: ['basharbashir1st@gmail.com'],
+      subject: `🇩🇰 DANSK PATIENT - Ny bokningsförfrågan - ${clinicName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div style="background-color: #dc2626; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+            <h2 style="margin: 0; font-size: 18px;">🇩🇰 DANSK PATIENT - Från DK Webbsida</h2>
+            <p style="margin: 5px 0 0 0; font-size: 14px;">Kom ihåg: Vi betalar patientens resa över Öresund!</p>
+          </div>
+          
           <h2 style="color: #1f2937; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">
             Ny bokningsförfrågan
           </h2>
@@ -55,7 +60,7 @@ export async function POST(request: NextRequest) {
           ` : ''}
 
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px;">
-            <p>Denna bokningsförfrågan skickades från Artofdent webbsida.</p>
+            <p>Denna bokningsförfrågan skickades från ARTOFDENT<span style="font-size: 10px; vertical-align: super;">dk</span> webbsida.</p>
             <p>Kontakta patienten inom 24 timmar för att bekräfta bokningen.</p>
           </div>
         </div>

@@ -40,10 +40,10 @@ export default function KunskapbankenPage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Fakta
+              Vidensbank
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300 max-w-xl">
-              Här hittar du all information du behöver om tänder, tandvård och munrelaterade sjukdomar.
+              Her finder du al information du har brug for om tænder, tandpleje og mundsygdomme.
             </p>
             
             {/* CTA Buttons */}
@@ -52,13 +52,13 @@ export default function KunskapbankenPage() {
                 href="/boka-tid"
                 className="rounded-full bg-accent-400 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-accent-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-400 transition-all"
               >
-                BOKA ONLINE
+                BOOK ONLINE
               </Link>
               <Link
                 href="/kontakt"
                 className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all"
               >
-                040-12 11 08
+                +46 40-12 11 08
               </Link>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function KunskapbankenPage() {
         <div className="absolute bottom-0 left-0 right-0 bg-accent-400 py-3">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <p className="text-center text-white text-sm">
-              Är du i behov av akut tandvård? Ring Artofdent på <strong>040-12 11 08</strong> eller ABC Tandklinikgruppen på <strong>040-18 44 00</strong> för att hitta en ledig tid eller boka en tid online
+              Har du brug for akut tandpleje? Ring Artofdent på <strong>+46 40-12 11 08</strong> eller ABC Tandklinikgruppen på <strong>+46 40-18 44 00</strong> for at finde en ledig tid eller book tid online
             </p>
           </div>
         </div>
@@ -112,21 +112,21 @@ export default function KunskapbankenPage() {
       <div className="bg-white py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
-            Här hittar du allt behöver veta om munvård, tänder och tandkött
+            Her finder du alt du behøver at vide om mundpleje, tænder og tandkød
           </h2>
           
           <div className="space-y-6 text-lg leading-8 text-gray-600">
             <p>
-              Vi på Art of Dent vill hjälpa dig att upprätthålla bästa möjliga munhälsa. Här hittar du all vår 
-              samlade information om munvård, tandhälsa, tänder, tandkött, tandvård och sjukdomar i 
-              munhålan.
+              Vi hos Art of Dent vil hjælpe dig med at opretholde den bedst mulige mundhealth. Her finder du al vores 
+              samlede information om mundpleje, tandsundhed, tænder, tandkød, tandpleje og sygdomme i 
+              mundhulen.
             </p>
             
             <p>
-              För att upprätthålla en god munhälsa behövs en kombination av noggranna rutiner hemma och 
-              regelbundna besök hos tandläkaren. På så sätt får tandläkaren möjlighet att upptäcka eventuell 
-              problematik innan den hinner bli besvärande och kräver omfattande åtgärder. När var du hos 
-              tandläkaren senast? Skjut inte upp besöket, boka tid redan i dag.
+              For at opretholde god mundsundhed kræves en kombination af omhyggelige rutiner hjemme og 
+              regelmæssige besøg hos tandlægen. På den måde får tandlægen mulighed for at opdage eventuelle 
+              problemer, før de bliver besværlige og kræver omfattende behandling. Hvornår var du sidst hos 
+              tandlægen? Udskyd ikke besøget - book tid allerede i dag.
             </p>
           </div>
           
@@ -135,7 +135,7 @@ export default function KunskapbankenPage() {
               href="/boka-tid"
               className="inline-flex items-center rounded-full bg-accent-400 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-400 transition-all"
             >
-              BOKA TID ONLINE
+              BOOK TID ONLINE
             </Link>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function KunskapbankenPage() {
         
         {/* Fakta om tänder, tandkött och slemhinnor */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Fakta om tänder, tandkött och slemhinnor</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Fakta om tænder, tandkød og slimhinder</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="space-y-3">
               <Link href="/kunskapbanken/caniner" className="block text-accent-500 hover:text-accent-600 transition-colors">Caniner</Link>
@@ -183,7 +183,7 @@ export default function KunskapbankenPage() {
             <div className="space-y-3">
               <Link href="/kunskapbanken/tandvard-for-aldre" className="block text-accent-500 hover:text-accent-600 transition-colors">Tandvård för äldre</Link>
               <Link href="/kunskapbanken/tunga" className="block text-accent-500 hover:text-accent-600 transition-colors">Tunga</Link>
-              <Link href="/kunskapbanken/vanliga-fragor-om-tander" className="block text-accent-500 hover:text-accent-600 transition-colors">Vanliga frågor om tänder</Link>
+              <Link href="/kunskapbanken/vanliga-fragor-om-tander" className="block text-accent-500 hover:text-accent-600 transition-colors">Ofte stillede spørgsmål om tænder</Link>
               <Link href="/kunskapbanken/visdomstander" className="block text-accent-500 hover:text-accent-600 transition-colors">Visdomständer</Link>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function KunskapbankenPage() {
 
         {/* Sjukdomar och besvär */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Sjukdomar och besvär</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Sygdomme og gener</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="space-y-3">
               <Link href="/kunskapbanken/afte" className="block text-accent-500 hover:text-accent-600 transition-colors">Afte</Link>
@@ -267,15 +267,15 @@ export default function KunskapbankenPage() {
 
         {/* CTA Section */}
         <section className="bg-gray-100 rounded-2xl p-12 text-center mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Vänta inte med att söka akut tandvård</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Vent ikke med at søge akut tandpleje</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Du kan boka en akuttid via vår onlinebokning eller ringa Artofdent på 040-12 11 08 eller ABC Tandklinikgruppen på 040-18 44 00.
+            Du kan booke en akuttid via vores online booking eller ringe til Artofdent på +46 40-12 11 08 eller ABC Tandklinikgruppen på +46 40-18 44 00.
           </p>
           <Link
             href="/boka-tid"
             className="inline-flex items-center rounded-full bg-accent-400 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-500 transition-all"
           >
-            BOKA TID ONLINE
+            BOOK TID ONLINE
           </Link>
         </section>
       </div>

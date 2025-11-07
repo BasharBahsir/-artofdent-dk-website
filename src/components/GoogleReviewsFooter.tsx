@@ -56,7 +56,7 @@ export default function GoogleReviewsFooter() {
           </div>
           
           <p className="text-sm text-gray-600">
-            Baserat på {totalReviews} recensioner
+            Baseret på {totalReviews} anmeldelser
           </p>
         </div>
 
